@@ -1,0 +1,269 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "week": "KW 19-20, 2026-05-09 bis 2026-05-15",
+  "recipes": [
+    {
+      "id": "r31606",
+      "title": "Lachsfilet mit Brokkoli, Kartoffeln und Dillsauce",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r31606",
+      "week_label": "KW 19-20 (09.-15.05.)",
+      "category": "Samstag Fisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.5,
+      "rating_count": "5.5K",
+      "estimate_context": "BLS/REWE, Brühe als Vegeta, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 536.8,
+        "protein": 38.8,
+        "fat": 25.3,
+        "fiber": 6.3,
+        "carbs": 36.8
+      },
+      "freezer_note": "eher nicht ideal; Fisch, Kartoffeln und Sahnesauce werden nach dem Auftauen schneller trocken bzw. mehlig",
+      "note": "Fisch zuerst/zeitnah essen.",
+      "ingredients": [
+        {
+          "name": "Wasser",
+          "grams": 500,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste/Gemüsebrühe",
+          "grams": 10,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "als Podravka Vegeta Oryginalna modelliert; 1 geh. TL grob 10 g"
+        },
+        {
+          "name": "Kartoffeln, geschält, roh",
+          "grams": 800,
+          "source": "bls",
+          "id": "K110100"
+        },
+        {
+          "name": "Brokkoliröschen",
+          "grams": 500,
+          "source": "bls",
+          "id": "G312100"
+        },
+        {
+          "name": "Lachsfilet, frisch, ohne Haut",
+          "grams": 600,
+          "source": "bls",
+          "id": "T410100"
+        },
+        {
+          "name": "Salz",
+          "grams": 2.5,
+          "source": "bls",
+          "id": "R111000"
+        },
+        {
+          "name": "Zitrone",
+          "grams": 50,
+          "source": "bls",
+          "id": "F601100"
+        },
+        {
+          "name": "Dill",
+          "grams": 0,
+          "note": "Menge klein/kein stabiler Match"
+        },
+        {
+          "name": "Sahne",
+          "grams": 100,
+          "source": "bls",
+          "id": "M173800"
+        }
+      ]
+    },
+    {
+      "id": "r28019",
+      "title": "Hackfleischrisotto",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r28019",
+      "week_label": "KW 19-20 (09.-15.05.)",
+      "category": "Sonntag Fleisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.6,
+      "rating_count": "13.0K",
+      "estimate_context": "BLS/REWE, Brühe als Vegeta, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 535,
+        "protein": 24,
+        "fat": 25,
+        "fiber": 3.1,
+        "carbs": 53
+      },
+      "freezer_note": "möglich, aber Risotto wird weicher. Zum Mealprep im Kühlschrank besser; einzelne Portionen lassen sich trotzdem einfrieren",
+      "ingredients": [
+        {
+          "name": "Parmesan",
+          "grams": 100,
+          "source": "bls",
+          "id": "M306400"
+        },
+        {
+          "name": "Rinderhackfleisch",
+          "grams": 200,
+          "source": "bls",
+          "id": "U010100"
+        },
+        {
+          "name": "Öl, 2 EL",
+          "grams": 20,
+          "source": "bls",
+          "id": "Q180000"
+        },
+        {
+          "name": "Möhre, 1 Stück",
+          "grams": 80,
+          "source": "bls",
+          "id": "G620100"
+        },
+        {
+          "name": "Staudensellerie-Stange, 1 Stück",
+          "grams": 40,
+          "source": "bls",
+          "id": "G220100"
+        },
+        {
+          "name": "Schalotte, 1 Stück",
+          "grams": 30,
+          "source": "bls",
+          "id": "G485100"
+        },
+        {
+          "name": "Risottoreis",
+          "grams": 250,
+          "source": "bls",
+          "id": "C352000"
+        },
+        {
+          "name": "Wasser",
+          "grams": 650,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste/Gemüsebrühe",
+          "grams": 10,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "als Podravka Vegeta Oryginalna modelliert; 1 geh. TL grob 10 g"
+        },
+        {
+          "name": "Passierte Tomaten",
+          "grams": 300,
+          "source": "rewe",
+          "id": "1060727"
+        },
+        {
+          "name": "Lorbeerblatt",
+          "grams": 0,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Salz",
+          "grams": 5,
+          "source": "bls",
+          "id": "R111000"
+        },
+        {
+          "name": "Butter",
+          "grams": 15,
+          "source": "bls",
+          "id": "Q630000"
+        }
+      ]
+    },
+    {
+      "id": "r683184",
+      "title": "Überbackene vegetarische Enchiladas",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r683184",
+      "week_label": "KW 19-20 (09.-15.05.)",
+      "category": "Montag Vegetarisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.7,
+      "rating_count": "3.2K",
+      "estimate_context": "BLS/REWE, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 657,
+        "protein": 24,
+        "fat": 34,
+        "fiber": 7.3,
+        "carbs": 62
+      },
+      "freezer_note": "gut geeignet; am besten portionsweise einfrieren und im Ofen oder Airfryer wieder aufbacken",
+      "note": "Liegt als 3 Wochenportionen etwas über 800 kcal; alternativ in 4 Cookidoo-Portionen lassen.",
+      "ingredients": [
+        {
+          "name": "Emmentaler",
+          "grams": 150,
+          "source": "bls",
+          "id": "M304600"
+        },
+        {
+          "name": "Öl",
+          "grams": 15,
+          "source": "bls",
+          "id": "Q180000"
+        },
+        {
+          "name": "Rote Paprika",
+          "grams": 200,
+          "source": "bls",
+          "id": "G543100"
+        },
+        {
+          "name": "Zucchini",
+          "grams": 120,
+          "source": "bls",
+          "id": "G582100"
+        },
+        {
+          "name": "Mais-Bohnen-Mix",
+          "grams": 265,
+          "source": "rewe",
+          "id": "5389712"
+        },
+        {
+          "name": "Salz",
+          "grams": 12.5,
+          "source": "bls",
+          "id": "R111000"
+        },
+        {
+          "name": "Weizentortillas, 8 Stück Ø ca. 20 cm",
+          "grams": 320,
+          "source": "rewe",
+          "id": "8387380",
+          "note": "8 Stück als 320-g-Packung / ca. 40 g pro Tortilla modelliert"
+        },
+        {
+          "name": "Schmand",
+          "grams": 200,
+          "source": "rewe",
+          "id": "5081882"
+        },
+        {
+          "name": "Stückige Tomaten",
+          "grams": 800,
+          "source": "rewe",
+          "id": "7211940"
+        },
+        {
+          "name": "Paprika edelsüß, Oregano, Chili",
+          "grams": 0,
+          "note": "Menge klein/ignoriert"
+        },
+        {
+          "name": "Koriander, frisch",
+          "grams": 0,
+          "note": "Servierdeko/ignoriert"
+        }
+      ]
+    }
+  ]
+}

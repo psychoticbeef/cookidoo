@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cookidoo Week"
+  short_description: "Plant drei neue Cookidoo-Gerichte"
+  default_prompt: "Use $cookidoo-week to plan my next Cookidoo meal-prep week and execute the list, notes, week-plan, and shopping workflow."

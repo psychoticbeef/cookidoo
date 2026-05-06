@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "defaults": [
+    {
+      "canonical": "Gemüsebrühe / Gewürzpaste",
+      "aliases": [
+        "Gemüsebrühe",
+        "Gemuesebruehe",
+        "Gewürzpaste für Gemüsebrühe",
+        "Gewuerzpaste fuer Gemuesebruehe",
+        "Brühwürfel Gemüse",
+        "Gemüsebrühwürfel",
+        "Gemüsebouillon"
+      ],
+      "default_match": {
+        "source": "rewe",
+        "id": "2082415",
+        "title": "Podravka Vegeta Oryginalna 500g"
+      },
+      "quantity_assumptions": [
+        {
+          "cookidoo_text": "1 geh. TL",
+          "grams": 10
+        },
+        {
+          "cookidoo_text": "1 Würfel Gemüsebrühe für 0,5 l",
+          "grams": 10
+        }
+      ],
+      "reason": "Guter Default für Cookidoo-Gemüsebrühe, weil MSG/Umami enthalten ist und der Salzanteil in den lokalen Daten mit 27,5 g Salz pro 100 g niedriger ist als bei einigen reinen Gemüsebrühepulvern.",
+      "nutrients_per_100g": {
+        "kcal": 124,
+        "protein": 7,
+        "carbs": 44,
+        "sugar": 15,
+        "fat": 0,
+        "saturated_fat": 0,
+        "salt": 27.5
+      }
+    }
+  ]
+}

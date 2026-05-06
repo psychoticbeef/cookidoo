@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "date_format": "YYYY-MM-DD",
+  "expiry_policy": {
+    "year_only": "use_end_of_year",
+    "month_year": "use_end_of_month",
+    "unknown": "treat_as_present_but_review_manually"
+  },
+  "always_have": [
+    {
+      "name": "Wasser",
+      "cookidoo_name": "Wasser",
+      "aliases": [
+        "Wasser"
+      ],
+      "category": "water",
+      "shopping_policy": "never_buy"
+    },
+    {
+      "name": "Olivenöl",
+      "cookidoo_name": "Olivenöl",
+      "aliases": [
+        "Olivenöl",
+        "Olivenoel",
+        "Olivenöl zum Braten",
+        "Olivenöl zum Einfetten"
+      ],
+      "category": "oil",
+      "shopping_policy": "usually_have"
+    },
+    {
+      "name": "Rapsöl",
+      "cookidoo_name": "Öl",
+      "aliases": [
+        "Öl",
+        "Oel",
+        "Rapsöl",
+        "Rapsoel"
+      ],
+      "category": "oil",
+      "shopping_policy": "usually_have",
+      "notes": "Generic Cookidoo 'Öl' can be treated as Rapsöl unless the recipe explicitly asks for another oil."
+    },
+    {
+      "name": "Ungesalzene Butter",
+      "cookidoo_name": "Butter",
+      "aliases": [
+        "Butter",
+        "ungesalzene Butter",
+        "Süßrahmbutter",
+        "Suessrahmbutter"
+      ],
+      "category": "fat",
+      "shopping_policy": "usually_have",
+      "notes": "Only skip if recipe does not explicitly require salted/special butter."
+    },
+    {
+      "name": "Weißer Essig",
+      "cookidoo_name": "Essig",
+      "aliases": [
+        "Essig",
+        "weißer Essig",
+        "weisser Essig",
+        "Weißweinessig",
+        "Weissweinessig"
+      ],
+      "category": "vinegar",
+      "shopping_policy": "usually_have",
+      "notes": "Special vinegars are separate unless substitutable."
+    },
+    {
+      "name": "Schwarzer Pfeffer",
+      "cookidoo_name": "Pfeffer",
+      "aliases": [
+        "Pfeffer",
+        "schwarzer Pfeffer",
+        "Pfeffer, schwarz"
+      ],
+      "category": "spice",
+      "shopping_policy": "usually_have"
+    },
+    {
+      "name": "Salz",
+      "cookidoo_name": "Salz",
+      "aliases": [
+        "Salz",
+        "Meersalz",
+        "feines Salz"
+      ],
+      "category": "seasoning",
+      "shopping_policy": "usually_have"
+    }
+  ],
+  "not_always_have": [
+    {
+      "name": "Sonnenblumenöl",
+      "cookidoo_name": "Sonnenblumenöl",
+      "aliases": [
+        "Sonnenblumenöl",
+        "Sonnenblumenoel"
+      ],
+      "shopping_policy": "buy_if_recipe_requires_it",
+      "notes": "Do not treat as pantry default."
+    }
+  ],
+  "dated_items": [
+    {
+      "name": "Vegeta",
+      "cookidoo_name": "Gewürzpaste für Gemüsebrühe, selbst gemacht",
+      "aliases": [
+        "Gewürzpaste für Gemüsebrühe, selbst gemacht",
+        "Gewürzpaste für Gemüsebrühe",
+        "Vegeta",
+        "Podravka Vegeta",
+        "Gemüsebrühe"
+      ],
+      "category": "seasoning",
+      "expires": "2027-12-31",
+      "source_text": "12/27",
+      "default_match": {
+        "source": "rewe",
+        "id": "2082415",
+        "title": "Podravka Vegeta Oryginalna 500g"
+      }
+    },
+    {
+      "name": "Reisessig",
+      "aliases": [
+        "Reisessig"
+      ],
+      "category": "vinegar",
+      "expires": null,
+      "source_text": "?",
+      "review": true
+    },
+    {
+      "name": "Zitronenpfeffer",
+      "aliases": [
+        "Zitronenpfeffer"
+      ],
+      "category": "spice",
+      "expires": "2027-12-31",
+      "source_text": "27"
+    },
+    {
+      "name": "Sojasauce",
+      "aliases": [
+        "Sojasauce",
+        "Soja-Sauce"
+      ],
+      "category": "sauce",
+      "expires": "2028-10-31",
+      "source_text": "10/28"
+    },
+    {
+      "name": "Chili",
+      "cookidoo_name": "Chili, gemahlen",
+      "aliases": [
+        "Chili, gemahlen",
+        "Chili",
+        "Chili gemahlen",
+        "Chiliflocken"
+      ],
+      "category": "spice",
+      "expires": "2028-12-31",
+      "source_text": "28"
+    },
+    {
+      "name": "Lorbeerblätter",
+      "cookidoo_name": "Lorbeerblatt, getrocknet",
+      "aliases": [
+        "Lorbeerblatt, getrocknet",
+        "Lorbeerblätter",
+        "Lorbeerblatt",
+        "Loorbeerblaetter"
+      ],
+      "category": "spice",
+      "expires": "2027-12-31",
+      "source_text": "27"
+    },
+    {
+      "name": "Steak Rub",
+      "aliases": [
+        "Steak Rub",
+        "Steak Ru"
+      ],
+      "category": "rub",
+      "expires": "2026-12-31",
+      "source_text": "ende 26"
+    },
+    {
+      "name": "Magic Dust Rub",
+      "aliases": [
+        "Magic Dust Rub",
+        "Magic Dust"
+      ],
+      "category": "rub",
+      "expires": "2028-12-31",
+      "source_text": "ende 28"
+    },
+    {
+      "name": "Paprika geräuchert",
+      "aliases": [
+        "Paprika geräuchert",
+        "Paprika geraeuchert",
+        "Räucherpaprika",
+        "Raeucherpaprika"
+      ],
+      "category": "spice",
+      "expires": "2028-08-31",
+      "source_text": "08/28"
+    },
+    {
+      "name": "Muskatnuss",
+      "aliases": [
+        "Muskatnuss",
+        "Muskat"
+      ],
+      "category": "spice",
+      "expires": "2029-08-31",
+      "source_text": "08/29"
+    },
+    {
+      "name": "Cayennepfeffer",
+      "aliases": [
+        "Cayennepfeffer",
+        "Cayenne"
+      ],
+      "category": "spice",
+      "expires": "2028-12-31",
+      "source_text": "28"
+    },
+    {
+      "name": "Harissa",
+      "aliases": [
+        "Harissa"
+      ],
+      "category": "spice",
+      "expires": "2028-07-31",
+      "source_text": "07/28"
+    },
+    {
+      "name": "Knoblauchpulver",
+      "aliases": [
+        "Knoblauchpulver",
+        "Knoblauch, getrocknet",
+        "Knoblauchgranulat"
+      ],
+      "category": "spice",
+      "expires": "2028-12-31",
+      "source_text": "28"
+    },
+    {
+      "name": "Curry",
+      "aliases": [
+        "Curry",
+        "Currypulver"
+      ],
+      "category": "spice",
+      "expires": "2026-12-31",
+      "source_text": "26"
+    },
+    {
+      "name": "Steinpilze",
+      "aliases": [
+        "Steinpilze",
+        "Steinpilze getrocknet",
+        "getrocknete Steinpilze"
+      ],
+      "category": "dried_mushroom",
+      "expires": "2028-01-31",
+      "source_text": "01/28"
+    },
+    {
+      "name": "Paprika edelsüß",
+      "cookidoo_name": "Paprika edelsüß",
+      "aliases": [
+        "Paprika edelsüß",
+        "Paprika edelsuess",
+        "edelsüßes Paprikapulver",
+        "Paprikapulver edelsüß"
+      ],
+      "category": "spice",
+      "expires": "2028-12-31",
+      "source_text": "28"
+    },
+    {
+      "name": "Getrocknete Zwiebel",
+      "aliases": [
+        "getrocknete Zwiebel",
+        "getrocknete Zwiebeln",
+        "Zwiebel getrocknet",
+        "Zwiebelgranulat",
+        "Zwiebelpulver"
+      ],
+      "category": "spice",
+      "expires": "2028-12-31",
+      "source_text": "28"
+    }
+  ]
+}

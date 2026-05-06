@@ -1,0 +1,112 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "event": "Donnerstag, 2026-05-07",
+  "recipes": [
+    {
+      "id": "r731676",
+      "title": "Spargel und Kartoffeln mit Sauce Hollandaise",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r731676",
+      "week_label": "Do 07.05.2026",
+      "category": "Donnerstag Saisongericht",
+      "cookidoo_portions": 4,
+      "real_portions": 4,
+      "rating": 4.6,
+      "rating_count": "1.2K",
+      "estimate_context": "BLS, Spargel 1250 g, Kochwasser-Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 698,
+        "protein": 11,
+        "fat": 59,
+        "fiber": 6.5,
+        "carbs": 30
+      },
+      "freezer_note": "eher nicht geeignet; Spargel, Kartoffeln und Hollandaise besser frisch essen. Reste im Kühlschrank aufbewahren und Hollandaise vorsichtig erwärmen",
+      "note": "Protein ist eher niedrig; als saisonales Spargelgericht notiert, nicht als proteinreiches Wochenessen.",
+      "cookidoo_note": "Do 07.05.2026: Donnerstag Saisongericht. 4 Cookidoo-Portionen = 4 Mahlzeiten; 1 Portion passt grob als 600-800-kcal-Mahlzeit.\n\nNährwerte geschätzt (BLS, Spargel 1250 g, Kochwasser-Salz grob), je Cookidoo-Portion:\nEnergie 2689 kJ / 643 kcal\nFett 43,5 g\n  davon gesättigte Fettsäuren 26,7 g\nKohlenhydrate 46,5 g\n  davon Zucker 14,0 g\nBallaststoffe 7,0 g\nEiweiß 12,9 g\nSalz 1,2 g\n\nEinfrieren: eher nicht geeignet; Spargel, Kartoffeln und Hollandaise besser frisch essen. Reste im Kühlschrank aufbewahren und Hollandaise vorsichtig erwärmen.\n\nHinweis: Cookidoo zeigt 698 kcal und 11 g Eiweiß pro Portion. Lokale Rechnung nimmt 1250 g Spargel an. Protein ist eher niedrig; als saisonales Spargelgericht notiert.",
+      "ingredients": [
+        {
+          "name": "Wasser, Kochwasser",
+          "grams": 600,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Salz, Kochwasser",
+          "grams": 2,
+          "source": "bls",
+          "id": "R111000",
+          "note": "Cookidoo 1 TL; nur grob anteilig als aufgenommen modelliert"
+        },
+        {
+          "name": "Zucker",
+          "grams": 0.5,
+          "manual_nutrients_per_100g": {
+            "kcal": 400,
+            "carbs": 100,
+            "sugar": 100,
+            "protein": 0,
+            "fat": 0,
+            "saturated_fat": 0,
+            "fiber": 0,
+            "salt": 0
+          },
+          "note": "1 Prise"
+        },
+        {
+          "name": "Butter, optional im Kochwasser",
+          "grams": 5,
+          "source": "bls",
+          "id": "Q630000"
+        },
+        {
+          "name": "Kartoffeln, geschält, roh",
+          "grams": 750,
+          "source": "bls",
+          "id": "K110100"
+        },
+        {
+          "name": "Spargel, roh",
+          "grams": 1250,
+          "source": "bls",
+          "id": "G450100",
+          "note": "Cookidoo-Spanne 1000-1500 g; Mitte angesetzt"
+        },
+        {
+          "name": "Wasser, Sauce Hollandaise",
+          "grams": 20,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Zitronensaft",
+          "grams": 10,
+          "source": "bls",
+          "id": "F601600"
+        },
+        {
+          "name": "Butter, Sauce Hollandaise",
+          "grams": 175,
+          "source": "bls",
+          "id": "Q630000"
+        },
+        {
+          "name": "Eigelb",
+          "grams": 72,
+          "source": "bls",
+          "id": "E112100",
+          "note": "4 Eigelb zu ca. 18 g"
+        },
+        {
+          "name": "Salz, Sauce Hollandaise",
+          "grams": 2.5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1/2 TL"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1 Prise/ignoriert"
+        }
+      ]
+    }
+  ]
+}
