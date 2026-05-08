@@ -6,6 +6,7 @@ supports two LLM-friendly workflows:
 
   nutrition.py search "broccoli roh" --source bls
   nutrition.py calc recipes/kw19-20-2026.json --markdown
+  nutrition.py week-brief recipes/kw19-20-2026.json --date 2026-05-09
 """
 
 from __future__ import annotations
@@ -393,6 +394,21 @@ def recipe_note(result: dict[str, Any]) -> str:
     return "\n\n".join(part for part in parts if part).strip()
 
 
+def pantry_ingredient_names(item: dict[str, Any]) -> list[str]:
+    name = item.get("name", "").strip()
+    if not name:
+        return []
+    if normalize(name) == "garflussigkeit":
+        return []
+    if float(item.get("grams") or 0) == 0 and ("," in name or " und " in name):
+        return [
+            part.strip()
+            for part in re.split(r",|\bund\b", name)
+            if part.strip()
+        ]
+    return [name]
+
+
 def calc(args: argparse.Namespace) -> int:
     products = load_products(args.db)
     index = {product_key(product): product for product in products}
@@ -412,6 +428,100 @@ def calc(args: argparse.Namespace) -> int:
     return 0
 
 
+def week_brief(args: argparse.Namespace) -> int:
+    products = load_products(args.db)
+    index = {product_key(product): product for product in products}
+    pantry = load_pantry(args.pantry)
+    cook_date = parse_date(args.date)
+
+    with Path(args.recipe_file).open(encoding="utf-8") as handle:
+        data = json.load(handle)
+    recipes = data["recipes"] if isinstance(data, dict) and "recipes" in data else data
+    results = [calc_recipe(recipe, index) for recipe in recipes]
+
+    out = ["# Cookidoo week brief", ""]
+    if isinstance(data, dict) and data.get("week"):
+        out.extend([f"- Woche: {data['week']}", ""])
+
+    out.extend([
+        "## Summary",
+        "",
+        "| Tag/Kategorie | Rezept | Portionen | kcal | Eiweiß | Einfrieren |",
+        "|---|---|---:|---:|---:|---|",
+    ])
+    for result in results:
+        recipe = result["recipe"]
+        out.append(
+            "| "
+            f"{recipe.get('category', '')} | "
+            f"{recipe['title']} | "
+            f"{recipe['cookidoo_portions']} -> {recipe.get('real_portions', recipe['cookidoo_portions'])} | "
+            f"{fmt(result['per_real']['kcal'], 0)} | "
+            f"{fmt(result['per_real']['protein'])} g | "
+            f"{recipe.get('freezer_note', '')} |"
+        )
+
+    out.extend(["", "## Cookidoo Notes", ""])
+    for result in results:
+        out.extend([
+            f"### {result['recipe']['title']}",
+            "",
+            "```text",
+            recipe_note(result),
+            "```",
+            "",
+        ])
+
+    decisions: dict[str, dict[str, Any]] = {}
+    for recipe in recipes:
+        for ingredient in recipe.get("ingredients", []):
+            for name in pantry_ingredient_names(ingredient):
+                decision = pantry_decision(name, pantry, cook_date)
+                key = normalize(decision["ingredient"])
+                decisions.setdefault(key, decision)
+
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for decision in decisions.values():
+        grouped.setdefault(decision["action"], []).append(decision)
+
+    out.extend([
+        "## Pantry Precheck",
+        "",
+        "Use Cookidoo's visible shopping-list wording as the final source of truth.",
+        "",
+    ])
+    for action, heading in [
+        ("remove_from_shopping_list", "Check off/remove"),
+        ("keep_on_shopping_list", "Keep"),
+        ("review_manually", "Review manually"),
+        ("buy_or_match_manually", "Buy or match manually"),
+    ]:
+        rows = sorted(grouped.get(action, []), key=lambda row: normalize(row["ingredient"]))
+        if not rows:
+            continue
+        out.extend([f"### {heading}", ""])
+        for row in rows:
+            matched = row.get("cookidoo_name") or row.get("matched")
+            suffix = f" -> {matched}" if matched else ""
+            out.append(f"- {row['ingredient']}{suffix}: {row['reason']}")
+        out.append("")
+
+    titles = ", ".join(recipe["title"] for recipe in recipes)
+    out.extend([
+        "## Verification Checklist",
+        "",
+        "- [ ] Shopping list cleared before adding recipes",
+        f"- [ ] Custom list contains exactly: {titles}",
+        "- [ ] Notes contain the kcal/protein values from this brief",
+        "- [ ] Week plan has Saturday/Sunday/Monday entries",
+        "- [ ] Shopping list shows `Nach Rezepten 3`",
+        "- [ ] Pantry-covered staples are no longer in the active shopping section",
+    ])
+
+    sys.stdout.write("\n".join(out).rstrip() + "\n")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=DEFAULT_DB)
@@ -428,6 +538,11 @@ def main(argv: list[str] | None = None) -> int:
     calc_parser.add_argument("recipe_file")
     calc_parser.add_argument("--markdown", action="store_true")
     calc_parser.set_defaults(func=calc)
+
+    brief_parser = sub.add_parser("week-brief", help="Create a compact week summary, notes, pantry precheck, and verification checklist")
+    brief_parser.add_argument("recipe_file")
+    brief_parser.add_argument("--date", required=True, help="First cooking date, YYYY-MM-DD")
+    brief_parser.set_defaults(func=week_brief)
 
     pantry_parser = sub.add_parser("pantry-check", help="Check whether pantry items should be bought")
     pantry_parser.add_argument("ingredients", nargs="+")

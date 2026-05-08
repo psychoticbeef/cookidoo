@@ -35,3 +35,18 @@ laufenden Jahr nicht wiederholt werden.
   - Wochenportionen: in 3 echte Mahlzeiten teilen, ca. 876 kcal und 32 g Eiweiss je Mahlzeit.
   - Hinweis: leicht ueber 800 kcal; alternativ in 4 Cookidoo-Portionen lassen.
 - Saisonnotiz: Mai/Spargelzeit; diese Woche kein saisonales Spargelgericht.
+
+## KW 21, 2026-05-16 bis 2026-05-22
+
+- Fisch: Fischfilet mit Brokkoli, Reis und Dillsauce — https://cookidoo.de/recipes/recipe/de-DE/r57135
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 643 kcal und 52,2 g Eiweiss je Mahlzeit.
+  - Hinweis: aehnlich zu KW 19-20, aber andere Rezept-ID und Reis statt Kartoffeln; gewaehlt, weil die Portionierung sauber passt.
+  - Einfrieren: eher nicht ideal; Fisch und Dillsauce zuerst/zeitnah essen.
+- Fleisch: Schnitzeltopf mit Gnocchi — https://cookidoo.de/recipes/recipe/de-DE/r34044
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 695 kcal und 48,4 g Eiweiss je Mahlzeit.
+  - Einfrieren: moeglich; Gnocchi und Gemuese werden etwas weicher.
+- Vegetarisch: Tofu-Bolognese — https://cookidoo.de/recipes/recipe/de-DE/r179019
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 855 kcal und 39,9 g Eiweiss je Mahlzeit.
+  - Hinweis: lokale Rechnung leicht ueber 800 kcal, weil Oel und Raeuchertofu voll eingerechnet sind.
+  - Einfrieren: Sauce gut, mit Pasta etwas weicher; fuer Mealprep im Kuehlschrank gut.
+- Saisonnotiz: Mai/Spargelzeit; diese Woche kein weiteres Spargelgericht, da am 07.05. bereits Spargel geplant war.

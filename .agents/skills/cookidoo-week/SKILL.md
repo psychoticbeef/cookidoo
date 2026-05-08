@@ -17,6 +17,12 @@ Use the in-app browser for Cookidoo. If browser automation is needed, use the Br
 
 Do not use generic internet search as a substitute for the user's logged-in Cookidoo account when recipe details, ratings, shopping-list actions, notes, or week-plan changes are needed.
 
+## Context Discipline
+
+- Do not run broad `rg` searches over `data/products_harmonized.json`; use focused `bin/nutrition.py search "<ingredient>" --source ...` queries instead.
+- Keep browser observations compact. Prefer targeted checks such as list count, saved-note substring, recipe/date presence, and pantry-staple absence over dumping full page text or large DOM snapshots.
+- If a browser UI state is unclear, inspect only the smallest relevant DOM/snapshot excerpt needed for the next action.
+
 ## Week Rule
 
 The user's meal-prep week runs Saturday through Friday. They cook on Saturday, Sunday, and Monday. Each of the three recipes should yield three real meal-prep portions, for nine total meals:
@@ -50,7 +56,7 @@ Selection criteria:
 - Avoid relatively poor ratings. Prefer about 4.3 stars or higher with a plausible number of ratings; reject low-rated recipes unless there is a clear reason and tell the user.
 - Avoid repeating any recipe already used this year. Check `docs/meal-plan-history-2026.md`, existing artifacts in `recipes/` and `reports/`, and any relevant Cookidoo lists/history visible in the browser. Compare both title and recipe ID.
 - Add light seasonality when it naturally fits. Do not force every recipe to be seasonal, but in season include relevant dishes occasionally, e.g. asparagus in asparagus season.
-- Choose recipes that can be set in Cookidoo to a sensible clickable portion count. If the final three real portions correspond to four Cookidoo portions, set four Cookidoo portions and note that four Cookidoo portions become three real meal-prep portions.
+- Choose recipes where one of Cookidoo's listed/clickable portion counts fits the target real portions and calorie range. Do not use a custom unlisted portion count via `Portionsgröße anpassen`/`Meine Kreationen`; Cookidoo does not provide the same success guarantee for those adaptations and this workflow should avoid them. If the final three real portions correspond to four listed Cookidoo portions, use four Cookidoo portions and note that four Cookidoo portions become three real meal-prep portions.
 
 ## Nutrition Calculation
 
@@ -75,6 +81,8 @@ For each selected recipe:
 3. write/update a report under `reports/`
 4. decide the Cookidoo portion count and real meal-prep portion count
 5. note important assumptions and any large Cookidoo-vs-local discrepancy
+
+After the recipe JSON is ready, run `bin/nutrition.py week-brief recipes/<file>.json --date YYYY-MM-DD` for a compact summary, Cookidoo note text, pantry precheck, and final verification checklist.
 
 ## Note Format
 
@@ -125,11 +133,11 @@ Read `docs/cookidoo-ui-reference.md` before manipulating Cookidoo.
 
 Then execute:
 
-1. Create a Cookidoo custom list for the target week, e.g. `KW 20 (09.-15.05.)`.
-2. Add exactly the three selected recipes to that list.
-3. For each recipe, set the chosen Cookidoo portion count where the UI allows it.
-4. Add the note text to each recipe.
-5. Clear the current Cookidoo shopping list.
+1. Clear the current Cookidoo shopping list before adding any new recipes, so stale checked items from a previous week cannot remain.
+2. Create a Cookidoo custom list for the target week, e.g. `KW 20 (09.-15.05.)`.
+3. Add exactly the three selected recipes to that list.
+4. For each recipe, use only a listed/clickable Cookidoo portion count. Do not create custom unlisted portion adaptations.
+5. Add the note text to each recipe.
 6. Add the three recipes to the shopping list.
 7. Remove/check off pantry-covered ingredients using the pantry rules.
 8. Add the recipes to the Cookidoo week plan on Saturday, Sunday, and Monday.

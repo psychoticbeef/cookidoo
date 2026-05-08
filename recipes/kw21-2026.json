@@ -1,0 +1,341 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "week": "KW 21, 2026-05-16 bis 2026-05-22",
+  "recipes": [
+    {
+      "id": "r57135",
+      "title": "Fischfilet mit Brokkoli, Reis und Dillsauce",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r57135",
+      "week_label": "KW 21 (16.-22.05.)",
+      "category": "Samstag Fisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.3,
+      "rating_count": "946",
+      "difficulty": "einfach",
+      "work_time": "20 Min",
+      "total_time": "45 Min",
+      "estimate_context": "BLS/REWE, Kabeljau als Fischfilet, Brühe als Vegeta, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 588,
+        "protein": 44,
+        "fat": 17,
+        "fiber": 4.9,
+        "carbs": 62
+      },
+      "freezer_note": "eher nicht ideal; Fisch und Dillsauce zuerst/zeitnah essen, Reis und Brokkoli im Kühlschrank gut",
+      "note": "Ähnlich zu letzter Woche, aber andere Rezept-ID und Reis statt Kartoffeln; gewählt, weil 4 Cookidoo-Portionen sauber in 3 Wochenportionen passen.",
+      "ingredients": [
+        {
+          "name": "Wasser",
+          "grams": 1200,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste/Gemüsebrühe",
+          "grams": 10,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "als Podravka Vegeta Oryginalna modelliert; 1 geh. TL grob 10 g"
+        },
+        {
+          "name": "Parboiled-Reis",
+          "grams": 250,
+          "source": "bls",
+          "id": "C359000"
+        },
+        {
+          "name": "Brokkoliröschen",
+          "grams": 500,
+          "source": "bls",
+          "id": "G312100"
+        },
+        {
+          "name": "Fischfilet, Kabeljau",
+          "grams": 600,
+          "source": "bls",
+          "id": "T204100"
+        },
+        {
+          "name": "Salz",
+          "grams": 5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "3/4 TL plus etwas zum Würzen; Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "Menge klein/ignoriert"
+        },
+        {
+          "name": "Zitrone",
+          "grams": 50,
+          "source": "bls",
+          "id": "F601100"
+        },
+        {
+          "name": "Dill",
+          "grams": 0,
+          "note": "Menge klein/kein stabiler Match"
+        },
+        {
+          "name": "Milch",
+          "grams": 200,
+          "source": "bls",
+          "id": "M111200"
+        },
+        {
+          "name": "Mehl",
+          "grams": 30,
+          "source": "bls",
+          "id": "C214100"
+        },
+        {
+          "name": "Butter",
+          "grams": 30,
+          "source": "bls",
+          "id": "Q630000"
+        },
+        {
+          "name": "Garflüssigkeit",
+          "grams": 0,
+          "note": "Wasser/Brühanteil, in Gemüsebrühe und Salz grob berücksichtigt"
+        }
+      ]
+    },
+    {
+      "id": "r34044",
+      "title": "Schnitzeltopf mit Gnocchi",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r34044",
+      "week_label": "KW 21 (16.-22.05.)",
+      "category": "Sonntag Fleisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.7,
+      "rating_count": "1.8K",
+      "difficulty": "einfach",
+      "work_time": "25 Min",
+      "total_time": "1 Std.",
+      "estimate_context": "BLS/REWE, Brühe als Vegeta, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 525,
+        "protein": 38,
+        "fat": 17,
+        "fiber": 7.3,
+        "carbs": 54
+      },
+      "freezer_note": "möglich; Gnocchi und Gemüse werden etwas weicher, portionsweise aber praktikabel",
+      "ingredients": [
+        {
+          "name": "Gemischtes Gemüse, Paprika",
+          "grams": 350,
+          "source": "bls",
+          "id": "G543100",
+          "note": "Gemüse-Mix exemplarisch halb Paprika, halb Zucchini"
+        },
+        {
+          "name": "Gemischtes Gemüse, Zucchini",
+          "grams": 350,
+          "source": "bls",
+          "id": "G582100",
+          "note": "Gemüse-Mix exemplarisch halb Paprika, halb Zucchini"
+        },
+        {
+          "name": "Kräutersalz",
+          "grams": 2,
+          "source": "bls",
+          "id": "R111000",
+          "note": "nicht genauer angegeben; als Salz grob modelliert"
+        },
+        {
+          "name": "Gnocchi, Kühlregal",
+          "grams": 500,
+          "source": "rewe",
+          "id": "941231"
+        },
+        {
+          "name": "Zwiebeln",
+          "grams": 150,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 25,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Schweineschnitzel",
+          "grams": 500,
+          "source": "bls",
+          "id": "U541100"
+        },
+        {
+          "name": "Wasser",
+          "grams": 350,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste/Gemüsebrühe",
+          "grams": 10,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "als Podravka Vegeta Oryginalna modelliert; 1 geh. TL grob 10 g"
+        },
+        {
+          "name": "Paprika edelsüß, Pfeffer, Muskat, Majoran, Pizzagewürz",
+          "grams": 0,
+          "note": "Mengen klein/ignoriert"
+        },
+        {
+          "name": "Sojasauce",
+          "grams": 15,
+          "source": "rewe",
+          "id": "5740070"
+        },
+        {
+          "name": "Tomatenmark",
+          "grams": 70,
+          "source": "rewe",
+          "id": "7129194"
+        },
+        {
+          "name": "Schmand",
+          "grams": 100,
+          "source": "rewe",
+          "id": "5081882"
+        }
+      ]
+    },
+    {
+      "id": "r179019",
+      "title": "Tofu-Bolognese",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r179019",
+      "week_label": "KW 21 (16.-22.05.)",
+      "category": "Montag Vegetarisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.4,
+      "rating_count": "1.6K",
+      "difficulty": "einfach",
+      "work_time": "20 Min",
+      "total_time": "40 Min",
+      "estimate_context": "BLS/REWE, Gemüsefond, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 587,
+        "protein": 23,
+        "fat": 16,
+        "carbs": 80
+      },
+      "freezer_note": "Sauce gut einfrierbar; mit Pasta wird es weicher, für Mealprep im Kühlschrank aber gut",
+      "note": "Lokale Rechnung liegt etwas über 800 kcal, weil Öl und Räuchertofu vollständig eingerechnet sind; Protein bleibt im akzeptablen Bereich.",
+      "ingredients": [
+        {
+          "name": "Räuchertofu",
+          "grams": 300,
+          "source": "rewe",
+          "id": "9472533"
+        },
+        {
+          "name": "Knoblauchzehen",
+          "grams": 6,
+          "source": "bls",
+          "id": "G490100",
+          "note": "2 Zehen zu ca. 3 g"
+        },
+        {
+          "name": "Zwiebeln",
+          "grams": 80,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Möhre",
+          "grams": 80,
+          "source": "bls",
+          "id": "G620100"
+        },
+        {
+          "name": "Staudensellerie",
+          "grams": 80,
+          "source": "bls",
+          "id": "G220100"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 40,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Tomatenmark",
+          "grams": 30,
+          "source": "rewe",
+          "id": "7129194"
+        },
+        {
+          "name": "Zucker",
+          "grams": 1,
+          "manual_nutrients_per_100g": {
+            "kcal": 400,
+            "carbs": 100,
+            "sugar": 100,
+            "protein": 0,
+            "fat": 0,
+            "saturated_fat": 0,
+            "fiber": 0,
+            "salt": 0
+          },
+          "note": "2 Prisen"
+        },
+        {
+          "name": "Passierte Tomaten",
+          "grams": 500,
+          "source": "rewe",
+          "id": "1060727"
+        },
+        {
+          "name": "Gemüsefond",
+          "grams": 250,
+          "source": "rewe",
+          "id": "8589069"
+        },
+        {
+          "name": "Lorbeerblatt und Oregano",
+          "grams": 0,
+          "note": "Menge klein/ignoriert"
+        },
+        {
+          "name": "Salz",
+          "grams": 5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1 TL; Salz im Nudelwasser nur grob/anteilig"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "Menge klein/ignoriert"
+        },
+        {
+          "name": "Fusilli",
+          "grams": 400,
+          "source": "rewe",
+          "id": "6653839"
+        },
+        {
+          "name": "Wasser zum Kochen der Nudeln",
+          "grams": 0,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Basilikum",
+          "grams": 0,
+          "note": "Menge klein/ignoriert"
+        }
+      ]
+    }
+  ]
+}

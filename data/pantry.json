@@ -285,6 +285,23 @@
       "source_text": "28"
     },
     {
+      "name": "Oregano",
+      "cookidoo_name": "Oregano",
+      "aliases": [
+        "Oregano",
+        "Oregano, getrocknet",
+        "Oregano gerebelt"
+      ],
+      "category": "spice",
+      "expires": "2029-02-28",
+      "source_text": "02/29",
+      "default_match": {
+        "source": "rewe",
+        "id": "4248490",
+        "title": "Ostmann Oregano gerebelt 25g"
+      }
+    },
+    {
       "name": "Getrocknete Zwiebel",
       "aliases": [
         "getrocknete Zwiebel",
