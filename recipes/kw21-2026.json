@@ -105,11 +105,210 @@
       ]
     },
     {
+      "id": "r731676",
+      "title": "Spargel und Kartoffeln mit Sauce Hollandaise",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r731676",
+      "week_label": "KW 21 (16.-22.05.)",
+      "category": "Sonntag Spargel",
+      "cookidoo_portions": 4,
+      "real_portions": 4,
+      "rating": 4.6,
+      "rating_count": "1.2K",
+      "estimate_context": "BLS, Spargel 1250 g, Kochwasser-Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 698,
+        "protein": 11,
+        "fat": 59,
+        "fiber": 6.5,
+        "carbs": 30
+      },
+      "freezer_note": "eher nicht geeignet; Spargel, Kartoffeln und Hollandaise besser frisch essen. Reste im Kühlschrank aufbewahren und Hollandaise vorsichtig erwärmen",
+      "note": "Sonntagsessen auf Papas Wunsch; saisonal, eher kohlenhydrat- und fettreich, Protein separat im Blick behalten.",
+      "ingredients": [
+        {
+          "name": "Wasser, Kochwasser",
+          "grams": 600,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Salz, Kochwasser",
+          "grams": 2,
+          "source": "bls",
+          "id": "R111000",
+          "note": "Cookidoo 1 TL; nur grob anteilig als aufgenommen modelliert"
+        },
+        {
+          "name": "Zucker",
+          "grams": 0.5,
+          "manual_nutrients_per_100g": {
+            "kcal": 400,
+            "carbs": 100,
+            "sugar": 100,
+            "protein": 0,
+            "fat": 0,
+            "saturated_fat": 0,
+            "fiber": 0,
+            "salt": 0
+          },
+          "note": "1 Prise"
+        },
+        {
+          "name": "Butter, optional im Kochwasser",
+          "grams": 5,
+          "source": "bls",
+          "id": "Q630000"
+        },
+        {
+          "name": "Kartoffeln, geschält, roh",
+          "grams": 750,
+          "source": "bls",
+          "id": "K110100"
+        },
+        {
+          "name": "Spargel, roh",
+          "grams": 1250,
+          "source": "bls",
+          "id": "G450100",
+          "note": "Cookidoo-Spanne 1000-1500 g; Mitte angesetzt"
+        },
+        {
+          "name": "Wasser, Sauce Hollandaise",
+          "grams": 20,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Zitronensaft",
+          "grams": 10,
+          "source": "bls",
+          "id": "F601600"
+        },
+        {
+          "name": "Butter, Sauce Hollandaise",
+          "grams": 175,
+          "source": "bls",
+          "id": "Q630000"
+        },
+        {
+          "name": "Eigelb",
+          "grams": 72,
+          "source": "bls",
+          "id": "E112100",
+          "note": "4 Eigelb zu ca. 18 g"
+        },
+        {
+          "name": "Salz, Sauce Hollandaise",
+          "grams": 2.5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1/2 TL"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1 Prise/ignoriert"
+        }
+      ]
+    },
+    {
+      "id": "r776039",
+      "title": "Schokoladigster Schokokuchen (Death by chocolate)",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r776039",
+      "week_label": "KW 21 (16.-22.05.)",
+      "category": "Sonntag Kuchen",
+      "cookidoo_portions": 8,
+      "real_portions": 8,
+      "rating": 4.5,
+      "rating_count": "90",
+      "difficulty": "einfach",
+      "work_time": "15 Min",
+      "total_time": "4 Std",
+      "estimate_context": "BLS, Eier mit 60 g/Stück, Vanillezucker 5 g/TL, Backpulver 2 g/1/2 TL",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 281,
+        "protein": 3.0,
+        "fat": 23.0,
+        "saturated_fat": 13.0,
+        "fiber": 2.1,
+        "carbs": 16.0,
+        "salt": 0.12
+      },
+      "freezer_note": "Kuchen hält abgedeckt mehrere Tage; einzelne Stücke lassen sich einfrieren",
+      "note": "Zusatz für den Sonntagsbesuch; Dessert nicht als Mealprep-Hauptmahlzeit zählen. Cookidoo mit gelisteten 8 Stücken geplant.",
+      "ingredients": [
+        {
+          "name": "Eier",
+          "grams": 180,
+          "source": "bls",
+          "id": "E111100",
+          "note": "3 Stück à ca. 60 g modelliert"
+        },
+        {
+          "name": "Zucker",
+          "grams": 50,
+          "manual_nutrients_per_100g": {
+            "kcal": 400,
+            "protein": 0,
+            "carbs": 100,
+            "sugar": 100,
+            "fat": 0,
+            "saturated_fat": 0,
+            "fiber": 0,
+            "salt": 0
+          }
+        },
+        {
+          "name": "Vanillezucker, selbst gemacht",
+          "grams": 5,
+          "source": "bls",
+          "id": "S114000",
+          "note": "1 TL grob als 5 g modelliert"
+        },
+        {
+          "name": "Mehl",
+          "grams": 20,
+          "source": "bls",
+          "id": "C214100"
+        },
+        {
+          "name": "Kakao",
+          "grams": 10,
+          "source": "bls",
+          "id": "S713000"
+        },
+        {
+          "name": "Backpulver",
+          "grams": 2,
+          "source": "bls",
+          "id": "R421100",
+          "note": "1/2 TL grob als 2 g modelliert"
+        },
+        {
+          "name": "Zartbitter-Schokolade",
+          "grams": 125,
+          "source": "bls",
+          "id": "S560000",
+          "note": "75 g Teig + 50 g Glasur zusammengefasst"
+        },
+        {
+          "name": "Butter",
+          "grams": 130,
+          "source": "bls",
+          "id": "Q630000"
+        },
+        {
+          "name": "Sahne",
+          "grams": 50,
+          "source": "bls",
+          "id": "M173800"
+        }
+      ]
+    },
+    {
       "id": "r34044",
       "title": "Schnitzeltopf mit Gnocchi",
       "url": "https://cookidoo.de/recipes/recipe/de-DE/r34044",
       "week_label": "KW 21 (16.-22.05.)",
-      "category": "Sonntag Fleisch",
+      "category": "Montag Fleisch",
       "cookidoo_portions": 4,
       "real_portions": 3,
       "rating": 4.7,
@@ -207,135 +406,8 @@
           "source": "rewe",
           "id": "5081882"
         }
-      ]
-    },
-    {
-      "id": "r179019",
-      "title": "Tofu-Bolognese",
-      "url": "https://cookidoo.de/recipes/recipe/de-DE/r179019",
-      "week_label": "KW 21 (16.-22.05.)",
-      "category": "Montag Vegetarisch",
-      "cookidoo_portions": 4,
-      "real_portions": 3,
-      "rating": 4.4,
-      "rating_count": "1.6K",
-      "difficulty": "einfach",
-      "work_time": "20 Min",
-      "total_time": "40 Min",
-      "estimate_context": "BLS/REWE, Gemüsefond, Salz grob",
-      "cookidoo_nutrition_per_portion": {
-        "kcal": 587,
-        "protein": 23,
-        "fat": 16,
-        "carbs": 80
-      },
-      "freezer_note": "Sauce gut einfrierbar; mit Pasta wird es weicher, für Mealprep im Kühlschrank aber gut",
-      "note": "Lokale Rechnung liegt etwas über 800 kcal, weil Öl und Räuchertofu vollständig eingerechnet sind; Protein bleibt im akzeptablen Bereich.",
-      "ingredients": [
-        {
-          "name": "Räuchertofu",
-          "grams": 300,
-          "source": "rewe",
-          "id": "9472533"
-        },
-        {
-          "name": "Knoblauchzehen",
-          "grams": 6,
-          "source": "bls",
-          "id": "G490100",
-          "note": "2 Zehen zu ca. 3 g"
-        },
-        {
-          "name": "Zwiebeln",
-          "grams": 80,
-          "source": "bls",
-          "id": "G480100"
-        },
-        {
-          "name": "Möhre",
-          "grams": 80,
-          "source": "bls",
-          "id": "G620100"
-        },
-        {
-          "name": "Staudensellerie",
-          "grams": 80,
-          "source": "bls",
-          "id": "G220100"
-        },
-        {
-          "name": "Olivenöl",
-          "grams": 40,
-          "source": "bls",
-          "id": "Q120000"
-        },
-        {
-          "name": "Tomatenmark",
-          "grams": 30,
-          "source": "rewe",
-          "id": "7129194"
-        },
-        {
-          "name": "Zucker",
-          "grams": 1,
-          "manual_nutrients_per_100g": {
-            "kcal": 400,
-            "carbs": 100,
-            "sugar": 100,
-            "protein": 0,
-            "fat": 0,
-            "saturated_fat": 0,
-            "fiber": 0,
-            "salt": 0
-          },
-          "note": "2 Prisen"
-        },
-        {
-          "name": "Passierte Tomaten",
-          "grams": 500,
-          "source": "rewe",
-          "id": "1060727"
-        },
-        {
-          "name": "Gemüsefond",
-          "grams": 250,
-          "source": "rewe",
-          "id": "8589069"
-        },
-        {
-          "name": "Lorbeerblatt und Oregano",
-          "grams": 0,
-          "note": "Menge klein/ignoriert"
-        },
-        {
-          "name": "Salz",
-          "grams": 5,
-          "source": "bls",
-          "id": "R111000",
-          "note": "1 TL; Salz im Nudelwasser nur grob/anteilig"
-        },
-        {
-          "name": "Pfeffer",
-          "grams": 0,
-          "note": "Menge klein/ignoriert"
-        },
-        {
-          "name": "Fusilli",
-          "grams": 400,
-          "source": "rewe",
-          "id": "6653839"
-        },
-        {
-          "name": "Wasser zum Kochen der Nudeln",
-          "grams": 0,
-          "note": "ignoriert"
-        },
-        {
-          "name": "Basilikum",
-          "grams": 0,
-          "note": "Menge klein/ignoriert"
-        }
-      ]
+      ],
+      "note": "Auf Montag verschoben; kräftiges Mealprep-Gericht mit sehr guter Proteinabdeckung."
     }
   ]
 }

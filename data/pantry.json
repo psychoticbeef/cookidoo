@@ -302,6 +302,21 @@
       }
     },
     {
+      "name": "Hartkorn Korianderblatt",
+      "cookidoo_name": "Korianderblatt",
+      "aliases": [
+        "Hartkorn Korianderblatt",
+        "Korianderblatt",
+        "Korianderblätter",
+        "Korianderblatt, getrocknet",
+        "Koriander, getrocknet",
+        "Koriandergrün, getrocknet"
+      ],
+      "category": "spice",
+      "expires": "2029-12-31",
+      "source_text": "2029"
+    },
+    {
       "name": "Getrocknete Zwiebel",
       "aliases": [
         "getrocknete Zwiebel",

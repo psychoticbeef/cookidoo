@@ -507,6 +507,7 @@ def week_brief(args: argparse.Namespace) -> int:
         out.append("")
 
     titles = ", ".join(recipe["title"] for recipe in recipes)
+    recipe_count = len(recipes)
     out.extend([
         "## Verification Checklist",
         "",
@@ -514,7 +515,7 @@ def week_brief(args: argparse.Namespace) -> int:
         f"- [ ] Custom list contains exactly: {titles}",
         "- [ ] Notes contain the kcal/protein values from this brief",
         "- [ ] Week plan has Saturday/Sunday/Monday entries",
-        "- [ ] Shopping list shows `Nach Rezepten 3`",
+        f"- [ ] Shopping list shows `Nach Rezepten {recipe_count}`",
         "- [ ] Pantry-covered staples are no longer in the active shopping section",
     ])
 

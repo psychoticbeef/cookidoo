@@ -42,11 +42,16 @@ laufenden Jahr nicht wiederholt werden.
   - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 643 kcal und 52,2 g Eiweiss je Mahlzeit.
   - Hinweis: aehnlich zu KW 19-20, aber andere Rezept-ID und Reis statt Kartoffeln; gewaehlt, weil die Portionierung sauber passt.
   - Einfrieren: eher nicht ideal; Fisch und Dillsauce zuerst/zeitnah essen.
+- Spargel/Besuch: Spargel und Kartoffeln mit Sauce Hollandaise — https://cookidoo.de/recipes/recipe/de-DE/r731676
+  - Cookidoo: 4 Portionen, ca. 643 kcal und 12,9 g Eiweiss pro Portion.
+  - Hinweis: bewusste Wiederholung wegen Papas Spargelwunsch; Protein eher niedrig.
+  - Einfrieren: eher nicht geeignet; frisch essen, Reste im Kuehlschrank.
+- Kuchen/Besuch: Schokoladigster Schokokuchen (Death by chocolate) — https://cookidoo.de/recipes/recipe/de-DE/r776039
+  - Cookidoo: 8 Stuecke, ca. 295 kcal und 4,8 g Eiweiss je Stueck.
+  - Hinweis: Zusatz fuer Sonntag, nicht als Mealprep-Hauptmahlzeit zaehlen.
 - Fleisch: Schnitzeltopf mit Gnocchi — https://cookidoo.de/recipes/recipe/de-DE/r34044
   - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 695 kcal und 48,4 g Eiweiss je Mahlzeit.
+  - Hinweis: auf Montag verschoben.
   - Einfrieren: moeglich; Gnocchi und Gemuese werden etwas weicher.
-- Vegetarisch: Tofu-Bolognese — https://cookidoo.de/recipes/recipe/de-DE/r179019
-  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 855 kcal und 39,9 g Eiweiss je Mahlzeit.
-  - Hinweis: lokale Rechnung leicht ueber 800 kcal, weil Oel und Raeuchertofu voll eingerechnet sind.
-  - Einfrieren: Sauce gut, mit Pasta etwas weicher; fuer Mealprep im Kuehlschrank gut.
-- Saisonnotiz: Mai/Spargelzeit; diese Woche kein weiteres Spargelgericht, da am 07.05. bereits Spargel geplant war.
+- Verschoben: Tofu-Bolognese — https://cookidoo.de/recipes/recipe/de-DE/r179019
+  - In die Folgewoche geschoben; in KW 21 nicht gekocht.
