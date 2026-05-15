@@ -302,6 +302,46 @@
       }
     },
     {
+      "name": "Kräutersalz",
+      "cookidoo_name": "Kräutersalz",
+      "aliases": [
+        "Kräutersalz",
+        "Kraeutersalz",
+        "Kräuter-Salz",
+        "Kraeuter-Salz"
+      ],
+      "category": "seasoning",
+      "expires": "2030-12-31",
+      "source_text": "2030"
+    },
+    {
+      "name": "Pizzagewürzmischung",
+      "cookidoo_name": "Pizzagewürz",
+      "aliases": [
+        "Pizzagewürz",
+        "Pizzagewuerz",
+        "Pizzagewürzmischung",
+        "Pizzagewuerzmischung",
+        "Pizza-Gewürz",
+        "Pizza-Gewuerz"
+      ],
+      "category": "spice",
+      "expires": "2029-01-31",
+      "source_text": "01/29"
+    },
+    {
+      "name": "Majoran",
+      "cookidoo_name": "Majoran, getrocknet",
+      "aliases": [
+        "Majoran",
+        "Majoran, getrocknet",
+        "Majoran getrocknet"
+      ],
+      "category": "spice",
+      "expires": "2029-02-28",
+      "source_text": "02/29"
+    },
+    {
       "name": "Hartkorn Korianderblatt",
       "cookidoo_name": "Korianderblatt",
       "aliases": [
