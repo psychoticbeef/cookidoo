@@ -94,6 +94,17 @@ item in `name`. This keeps the UI cleanup simple while preserving substitutions
 such as `Öl -> Rapsöl` and `Gewürzpaste für Gemüsebrühe, selbst gemacht ->
 Vegeta`.
 
+For recipe JSON, a zero-gram ingredient can be used as a pantry-only marker.
+`week-brief` splits compact zero-gram pantry lists such as `Paprika edelsüß,
+Pfeffer, Muskat` into separate checks. It keeps descriptive suffixes such as
+`Lorbeerblatt, getrocknet` as one ingredient so adjectives do not become bogus
+shopping-list entries. If the automatic split is still ambiguous, add an
+explicit override:
+
+```json
+{"name": "Paprika edelsüß, Pfeffer und Muskat", "grams": 0, "pantry_names": ["Paprika edelsüß", "Pfeffer", "Muskat"]}
+```
+
 For dated spices/sauces:
 
 1. If the ingredient is listed and `expires` is after the first cooking date of

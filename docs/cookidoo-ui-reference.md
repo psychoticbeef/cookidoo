@@ -27,6 +27,20 @@ Beispiel:
 https://cookidoo.de/search/de-DE?languages=de&tmv=TM6&difficulty=easy&preparationTime=1800&query=Lachs
 ```
 
+## Kontextarme Verifikation
+
+- Nach einem grossen Seitenwechsel reicht ein breiter Snapshot zur Orientierung.
+  Danach gezielte Checks verwenden: Listentitel, Rezeptanzahl, Notiz-Substring,
+  `Nach Rezepten N`, Planungsdatum und konkrete Pantry-Begriffe.
+- Bei der Einkaufsliste den aktiven Bereich vor `Bereits vorhandene Artikel`
+  getrennt pruefen. Sonst wirken bereits abgehakte Vorratsartikel wie offene
+  Einkaufspositionen.
+- Fuer wiederholte Rezeptaktionen kleine Browser-Helfer verwenden, z. B.
+  Rezeptseite oeffnen, Kontextmenue oeffnen, Menuepunkt klicken, Dialog
+  bestaetigen. Das spart Kontext gegenueber mehrfachen Vollsnapshots.
+- Wenn ein UI-Zustand nur visuell eindeutig ist, einen Screenshot fuer genau
+  diesen Bereich nutzen und danach wieder zu gezielten DOM-Pruefungen wechseln.
+
 ## Rezeptlisten
 
 Liste erstellen:
@@ -49,6 +63,11 @@ Rezept aus Liste entfernen:
 1. Rezeptliste oeffnen.
 2. Kontextmenue am Rezept-Card oeffnen.
 3. `Entfernen`.
+
+Hinweis zur In-App-Browser-Ansicht: Bei schmaler/responsiver Ansicht kann eine
+direkte Custom-List-URL zunaechst nur die linke Listen-Navigation zeigen. Dann
+die Ziel-Liste in der Navigation anklicken; Cookidoo springt auf dieselbe URL mit
+`#main` und zeigt die Rezeptkarten.
 
 ## Einkaufsliste
 

@@ -17,11 +17,17 @@ Use the in-app browser for Cookidoo. If browser automation is needed, use the Br
 
 Do not use generic internet search as a substitute for the user's logged-in Cookidoo account when recipe details, ratings, shopping-list actions, notes, or week-plan changes are needed.
 
+For repeated Cookidoo UI actions, load `references/browser-helpers.md` and copy
+only the smallest relevant snippet into the browser context.
+
 ## Context Discipline
 
 - Do not run broad `rg` searches over `data/products_harmonized.json`; use focused `bin/nutrition.py search "<ingredient>" --source ...` queries instead.
 - Keep browser observations compact. Prefer targeted checks such as list count, saved-note substring, recipe/date presence, and pantry-staple absence over dumping full page text or large DOM snapshots.
 - If a browser UI state is unclear, inspect only the smallest relevant DOM/snapshot excerpt needed for the next action.
+- Read large local references, including this skill's Browser instructions, once per turn unless they changed. Reuse the remembered workflow instead of reopening the same long files.
+- After running `bin/nutrition.py week-brief`, keep later checks targeted to the relevant section or substring. Do not repeat the full brief output unless it is needed for the final answer or an audit artifact.
+- For repetitive Cookidoo browser actions, prefer small reusable page helpers and targeted JavaScript checks over repeated full snapshots.
 
 ## Week Rule
 
@@ -83,6 +89,10 @@ For each selected recipe:
 5. note important assumptions and any large Cookidoo-vs-local discrepancy
 
 After the recipe JSON is ready, run `bin/nutrition.py week-brief recipes/<file>.json --date YYYY-MM-DD` for a compact summary, Cookidoo note text, pantry precheck, and final verification checklist.
+
+For pantry-only zero-gram ingredients, use `pantry_names` in the recipe JSON when
+the automatic split would be ambiguous. The helper already avoids splitting
+descriptive suffixes such as `Lorbeerblatt, getrocknet`.
 
 ## Note Format
 

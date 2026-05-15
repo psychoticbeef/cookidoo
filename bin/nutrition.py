@@ -53,6 +53,31 @@ def normalize(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+PANTRY_DESCRIPTOR_PARTS = {
+    normalize(value)
+    for value in (
+        "abgezupft",
+        "frisch",
+        "gehackt",
+        "gemahlen",
+        "gerebelt",
+        "getrocknet",
+        "grob zerkleinert",
+        "in Stuecken",
+        "in Stücken",
+        "kuehlschrankkalt",
+        "kühlschrankkalt",
+        "ohne Stiele",
+        "optional",
+        "selbst gemacht",
+    )
+}
+
+
+def is_pantry_descriptor_part(value: str) -> bool:
+    return normalize(value) in PANTRY_DESCRIPTOR_PARTS
+
+
 def load_products(path: Path) -> list[dict[str, Any]]:
     with path.open(encoding="utf-8") as handle:
         return json.load(handle)
@@ -395,17 +420,20 @@ def recipe_note(result: dict[str, Any]) -> str:
 
 
 def pantry_ingredient_names(item: dict[str, Any]) -> list[str]:
+    pantry_names = item.get("pantry_names")
+    if isinstance(pantry_names, list):
+        return [str(part).strip() for part in pantry_names if str(part).strip()]
+
     name = item.get("name", "").strip()
     if not name:
         return []
     if normalize(name) == "garflussigkeit":
         return []
     if float(item.get("grams") or 0) == 0 and ("," in name or " und " in name):
-        return [
-            part.strip()
-            for part in re.split(r",|\bund\b", name)
-            if part.strip()
-        ]
+        parts = [part.strip() for part in re.split(r",|\bund\b", name) if part.strip()]
+        if len(parts) > 1 and all(is_pantry_descriptor_part(part) for part in parts[1:]):
+            return [name]
+        return parts
     return [name]
 
 

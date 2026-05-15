@@ -55,3 +55,18 @@ laufenden Jahr nicht wiederholt werden.
   - Einfrieren: moeglich; Gnocchi und Gemuese werden etwas weicher.
 - Verschoben: Tofu-Bolognese — https://cookidoo.de/recipes/recipe/de-DE/r179019
   - In die Folgewoche geschoben; in KW 21 nicht gekocht.
+
+## KW 22, 2026-05-23 bis 2026-05-29
+
+- Fisch: Schlemmerfilet mit Tomatenreis — https://cookidoo.de/recipes/recipe/de-DE/r143071
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 823 kcal und 42,2 g Eiweiss je Mahlzeit.
+  - Hinweis: kalorisch knapp ueber 800 kcal, Protein-Ziel erreicht.
+  - Einfrieren: eher nicht ideal; Fisch und Knusperkruste zuerst/zeitnah essen, Tomatenreis im Kuehlschrank gut.
+- Fleisch: Haehnchen-Kokos-Curry mit Reis — https://cookidoo.de/recipes/recipe/de-DE/r621842
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 807 kcal und 42,2 g Eiweiss je Mahlzeit.
+  - Hinweis: lokale Schaetzung hat deutlich mehr gesaettigte Fettsaeuren als Cookidoo, weil die volle Dose Kokosmilch als vollfett modelliert ist.
+  - Einfrieren: gut geeignet; Curry und Reis halten im Kuehlschrank gut und lassen sich portionsweise einfrieren.
+- Vegetarisch: Tofu-Bolognese — https://cookidoo.de/recipes/recipe/de-DE/r179019
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 841 kcal und 39,3 g Eiweiss je Mahlzeit.
+  - Hinweis: bestehender Montagseintrag aus der Vorwoche; etwas ueber 800 kcal, Protein im akzeptablen Bereich.
+  - Einfrieren: Sauce gut einfrierbar; mit Pasta wird es weicher, fuer Mealprep im Kuehlschrank aber gut.

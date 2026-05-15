@@ -1,0 +1,381 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "week": "KW 22, 2026-05-23 bis 2026-05-29",
+  "recipes": [
+    {
+      "id": "r143071",
+      "title": "Schlemmerfilet mit Tomatenreis",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r143071",
+      "week_label": "KW 22 (23.-29.05.)",
+      "category": "Samstag Fisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.4,
+      "rating_count": "2.2K",
+      "difficulty": "einfach",
+      "work_time": "15 Min",
+      "total_time": "45 Min",
+      "estimate_context": "BLS/REWE, TK-Seelachs, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 617,
+        "protein": 28,
+        "fat": 29,
+        "fiber": 2.7,
+        "carbs": 59
+      },
+      "freezer_note": "eher nicht ideal; Fisch und Knusperkruste zuerst/zeitnah essen, Tomatenreis hält im Kühlschrank gut",
+      "note": "Liegt kalorisch knapp über 800 kcal, erreicht dafür das Protein-Ziel.",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "grams": 30,
+          "source": "bls",
+          "id": "Q630000"
+        },
+        {
+          "name": "Parmesan",
+          "grams": 50,
+          "source": "bls",
+          "id": "M306400"
+        },
+        {
+          "name": "Petersilie",
+          "grams": 15,
+          "source": "bls",
+          "id": "G250100",
+          "note": "1/2 Bund grob als 15 g modelliert"
+        },
+        {
+          "name": "Dill",
+          "grams": 0,
+          "note": "1 Stängel, Menge klein/ignoriert"
+        },
+        {
+          "name": "Knoblauchzehe",
+          "grams": 5,
+          "source": "bls",
+          "id": "G490100"
+        },
+        {
+          "name": "Panko",
+          "grams": 40,
+          "source": "rewe",
+          "id": "2666357"
+        },
+        {
+          "name": "Salz",
+          "grams": 4,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1/2 TL plus etwas zum Würzen; Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "Menge klein/ignoriert"
+        },
+        {
+          "name": "Fischfilets, TK, Seelachs",
+          "grams": 400,
+          "source": "bls",
+          "id": "T207100",
+          "note": "Cookidoo: Seelachs oder Kabeljau; als Köhler/Seelachs modelliert"
+        },
+        {
+          "name": "Zwiebel",
+          "grams": 80,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Knoblauchzehe",
+          "grams": 5,
+          "source": "bls",
+          "id": "G490100"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 60,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Wasser",
+          "grams": 450,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Reis, parboiled",
+          "grams": 250,
+          "source": "bls",
+          "id": "C359000"
+        },
+        {
+          "name": "Stückige Tomaten",
+          "grams": 400,
+          "source": "rewe",
+          "id": "7211940"
+        },
+        {
+          "name": "Basilikumblätter",
+          "grams": 2,
+          "source": "bls",
+          "id": "G061000",
+          "note": "4 Blätter grob als 2 g modelliert"
+        }
+      ]
+    },
+    {
+      "id": "r621842",
+      "title": "Hähnchen-Kokos-Curry mit Reis",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r621842",
+      "week_label": "KW 22 (23.-29.05.)",
+      "category": "Sonntag Fleisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.7,
+      "rating_count": "10.6K",
+      "difficulty": "einfach",
+      "work_time": "10 Min",
+      "total_time": "40 Min",
+      "estimate_context": "BLS/REWE, Kokosmilch vollfett, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 586,
+        "protein": 31,
+        "fat": 27,
+        "saturated_fat": 1,
+        "fiber": 3.5,
+        "carbs": 51
+      },
+      "freezer_note": "gut geeignet; Curry und Reis halten im Kühlschrank gut und lassen sich portionsweise einfrieren",
+      "note": "Lokale Rechnung hat deutlich mehr gesättigte Fettsäuren als Cookidoo, weil die volle Dose Kokosmilch als vollfett modelliert ist.",
+      "ingredients": [
+        {
+          "name": "Wasser",
+          "grams": 800,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Salz",
+          "grams": 7.5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1 1/2 TL plus Würzen; Salzaufnahme grob"
+        },
+        {
+          "name": "Reis, parboiled",
+          "grams": 200,
+          "source": "bls",
+          "id": "C359000"
+        },
+        {
+          "name": "Hähnchenbrustfilets",
+          "grams": 400,
+          "source": "rewe",
+          "id": "8342820"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "Menge klein/ignoriert"
+        },
+        {
+          "name": "Rote Paprika",
+          "grams": 200,
+          "source": "bls",
+          "id": "G543100"
+        },
+        {
+          "name": "Zucchini",
+          "grams": 200,
+          "source": "bls",
+          "id": "G582100"
+        },
+        {
+          "name": "Zwiebeln",
+          "grams": 120,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Knoblauchzehen",
+          "grams": 10,
+          "source": "bls",
+          "id": "G490100"
+        },
+        {
+          "name": "Tomatenmark",
+          "grams": 30,
+          "source": "rewe",
+          "id": "7129194"
+        },
+        {
+          "name": "Öl",
+          "grams": 30,
+          "source": "bls",
+          "id": "Q180000"
+        },
+        {
+          "name": "Curry",
+          "grams": 6,
+          "source": "rewe",
+          "id": "4208064",
+          "note": "1 EL grob als 6 g modelliert"
+        },
+        {
+          "name": "Kokosmilch",
+          "grams": 400,
+          "source": "rewe",
+          "id": "792132"
+        },
+        {
+          "name": "Honig",
+          "grams": 30,
+          "source": "bls",
+          "id": "S120000"
+        },
+        {
+          "name": "Koriander",
+          "grams": 0,
+          "note": "Garnitur/ignoriert"
+        }
+      ]
+    },
+    {
+      "id": "r179019",
+      "title": "Tofu-Bolognese",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r179019",
+      "week_label": "KW 22 (23.-29.05.)",
+      "category": "Montag Vegetarisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.4,
+      "rating_count": "1.6K",
+      "difficulty": "einfach",
+      "work_time": "20 Min",
+      "total_time": "40 Min",
+      "estimate_context": "BLS/REWE, Gemüsefond, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 587,
+        "protein": 23,
+        "fat": 16,
+        "carbs": 80
+      },
+      "freezer_note": "Sauce gut einfrierbar; mit Pasta wird es weicher, für Mealprep im Kühlschrank aber gut",
+      "note": "Bestehender Montagseintrag aus der Vorwoche; lokale Rechnung liegt etwas über 800 kcal, Protein bleibt im akzeptablen Bereich.",
+      "ingredients": [
+        {
+          "name": "Räuchertofu",
+          "grams": 300,
+          "source": "rewe",
+          "id": "9472533"
+        },
+        {
+          "name": "Knoblauchzehen",
+          "grams": 10,
+          "source": "bls",
+          "id": "G490100"
+        },
+        {
+          "name": "Zwiebeln",
+          "grams": 80,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Möhre",
+          "grams": 80,
+          "source": "bls",
+          "id": "G620100"
+        },
+        {
+          "name": "Staudensellerie",
+          "grams": 80,
+          "source": "bls",
+          "id": "G220100"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 40,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Tomatenmark",
+          "grams": 30,
+          "source": "rewe",
+          "id": "7129194"
+        },
+        {
+          "name": "Zucker",
+          "grams": 1,
+          "manual_nutrients_per_100g": {
+            "kcal": 400,
+            "protein": 0,
+            "carbs": 100,
+            "sugar": 100,
+            "fat": 0,
+            "saturated_fat": 0,
+            "fiber": 0,
+            "salt": 0
+          },
+          "note": "2 Prisen"
+        },
+        {
+          "name": "Passierte Tomaten",
+          "grams": 500,
+          "source": "rewe",
+          "id": "1060727"
+        },
+        {
+          "name": "Gemüsefond",
+          "grams": 250,
+          "source": "rewe",
+          "id": "8589069"
+        },
+        {
+          "name": "Lorbeerblatt, getrocknet",
+          "grams": 0,
+          "note": "1 Blatt/ignoriert"
+        },
+        {
+          "name": "Oregano, getrocknet",
+          "grams": 2,
+          "source": "rewe",
+          "id": "4248490",
+          "note": "1 1/2 TL grob als 2 g modelliert"
+        },
+        {
+          "name": "Salz",
+          "grams": 5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1 TL; Nudelwasser-Salz größtenteils abgegossen, Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "Menge klein/ignoriert"
+        },
+        {
+          "name": "Fusilli",
+          "grams": 400,
+          "source": "bls",
+          "id": "E401000"
+        },
+        {
+          "name": "Wasser",
+          "grams": 0,
+          "note": "Nudelwasser/ignoriert"
+        },
+        {
+          "name": "Basilikum",
+          "grams": 5,
+          "source": "bls",
+          "id": "G061000",
+          "note": "3 Stängel grob als 5 g modelliert"
+        }
+      ]
+    }
+  ]
+}
