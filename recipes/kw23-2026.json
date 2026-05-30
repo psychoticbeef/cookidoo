@@ -1,0 +1,324 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "week": "KW 23, 2026-05-30 bis 2026-06-05",
+  "recipes": [
+    {
+      "id": "r128176",
+      "title": "Lachs-Fenchel-Risotto",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r128176",
+      "week_label": "KW 23 (30.05.-05.06.)",
+      "category": "Samstag Fisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.5,
+      "rating_count": "508",
+      "difficulty": "einfach",
+      "work_time": "10 Min",
+      "total_time": "25 Min",
+      "estimate_context": "BLS/REWE, Fischbrühe als Vegeta-Default, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 618,
+        "protein": 28,
+        "fat": 25,
+        "fiber": 1.9,
+        "carbs": 67
+      },
+      "freezer_note": "eher nicht ideal; Risotto und Lachs zuerst/zeitnah essen, beim Aufwärmen vorsichtig",
+      "note": "Lokale Schätzung liegt kalorisch knapp über 800 kcal; Protein ist mit ca. 37 g im akzeptablen Bereich.",
+      "ingredients": [
+        {
+          "name": "Parmesan",
+          "grams": 40,
+          "source": "bls",
+          "id": "M306400"
+        },
+        {
+          "name": "Schalotten",
+          "grams": 50,
+          "source": "bls",
+          "id": "G485100"
+        },
+        {
+          "name": "Fenchel",
+          "grams": 150,
+          "source": "bls",
+          "id": "G430100"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 20,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Risottoreis",
+          "grams": 320,
+          "source": "bls",
+          "id": "C352000"
+        },
+        {
+          "name": "Weißwein, trocken",
+          "grams": 100,
+          "source": "bls",
+          "id": "P210000"
+        },
+        {
+          "name": "Wasser",
+          "grams": 700,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste für Fischbrühe",
+          "grams": 10,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "mangels spezifischem Fischbrühpastenprodukt als Vegeta-Default modelliert; 1 geh. TL grob 10 g"
+        },
+        {
+          "name": "Salz",
+          "grams": 3.75,
+          "source": "bls",
+          "id": "R111000",
+          "note": "Cookidoo 1/2-1 TL; Mitte als 3,75 g modelliert, Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1 TL, Menge für Energie ignoriert"
+        },
+        {
+          "name": "geriebene Zitronenschale",
+          "grams": 0,
+          "note": "1 EL Aroma, Menge klein/ignoriert"
+        },
+        {
+          "name": "Lachsfilet, frisch, ohne Haut",
+          "grams": 350,
+          "source": "bls",
+          "id": "T410100"
+        },
+        {
+          "name": "Butter",
+          "grams": 30,
+          "source": "bls",
+          "id": "Q630000"
+        },
+        {
+          "name": "Dill",
+          "grams": 0,
+          "note": "1 EL, Menge klein/kein stabiler Match"
+        }
+      ]
+    },
+    {
+      "id": "r790381",
+      "title": "Linsen-Tomaten-Suppe",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r790381",
+      "week_label": "KW 23 (30.05.-05.06.)",
+      "category": "Sonntag Vegetarisch",
+      "cookidoo_portions": 6,
+      "real_portions": 3,
+      "rating": 4.7,
+      "rating_count": "2.4K",
+      "difficulty": "einfach",
+      "work_time": "10 Min",
+      "total_time": "30 Min",
+      "estimate_context": "BLS/REWE, 6 Cookidoo-Portionen, Creme fraiche eingerechnet, Gemüsebrühe als Vegeta-Default, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 306,
+        "protein": 14,
+        "fat": 14,
+        "fiber": 9.9,
+        "carbs": 25
+      },
+      "freezer_note": "gut möglich; ohne Garnitur einfrieren, Crème fraîche besser beim Aufwärmen frisch einrühren oder Kühlschrank-Mealprep nutzen",
+      "note": "Spontaner Ersatz für den verschobenen Linsen-Spargelsalat; 6 Cookidoo-Portionen ergeben drei sättigende Suppenportionen, Protein im akzeptablen Bereich.",
+      "ingredients": [
+        {
+          "name": "Zwiebeln",
+          "grams": 180,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Knoblauchzehen",
+          "grams": 30,
+          "source": "bls",
+          "id": "G490100",
+          "note": "6 Knoblauchzehen grob als 30 g modelliert"
+        },
+        {
+          "name": "Öl",
+          "grams": 30,
+          "source": "bls",
+          "id": "Q180000",
+          "note": "Cookidoo generisch 'Öl', als Rapsöl modelliert"
+        },
+        {
+          "name": "Stückige Tomaten",
+          "grams": 600,
+          "source": "rewe",
+          "id": "7211940"
+        },
+        {
+          "name": "Tomatenmark",
+          "grams": 30,
+          "source": "rewe",
+          "id": "7129194"
+        },
+        {
+          "name": "Wasser",
+          "grams": 750,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste für Gemüsebrühe",
+          "grams": 30,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "Cookidoo 3 geh. TL bei 6 Portionen; Vegeta-Default, Salzaufnahme grob"
+        },
+        {
+          "name": "Salz",
+          "grams": 5.625,
+          "source": "bls",
+          "id": "R111000",
+          "note": "3/4 TL auf 6 Portionen skaliert; Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "3/4 TL, Menge für Energie ignoriert"
+        },
+        {
+          "name": "Rote Linsen, getrocknet",
+          "grams": 300,
+          "source": "bls",
+          "id": "H730000"
+        },
+        {
+          "name": "Crème fraîche",
+          "grams": 150,
+          "source": "bls",
+          "id": "M176800",
+          "note": "optionale Cookidoo-Zutat eingerechnet, damit die Suppe als Wochenportion passt"
+        },
+        {
+          "name": "Petersilie",
+          "grams": 0,
+          "note": "Garnitur, nicht berechnet"
+        },
+        {
+          "name": "Frühlingszwiebel",
+          "grams": 0,
+          "note": "Garnitur, nicht berechnet"
+        }
+      ]
+    },
+    {
+      "id": "r476261",
+      "title": "Tomaten-Geschnetzeltes mit Gnocchi und Zucchini",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r476261",
+      "week_label": "KW 23 (30.05.-05.06.)",
+      "category": "Montag Fleisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.4,
+      "rating_count": "2.2K",
+      "difficulty": "einfach",
+      "work_time": "15 Min",
+      "total_time": "35 Min",
+      "estimate_context": "BLS/REWE, Gyros als gewürztes Schweinegyros, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 557,
+        "protein": 36,
+        "fat": 20,
+        "fiber": 6.6,
+        "carbs": 53
+      },
+      "freezer_note": "möglich; Gnocchi und Zucchini werden weicher, im Kühlschrank für Mealprep gut",
+      "note": "Montagsgericht mit niedrigem aktivem Aufwand; Gyros-Fett und Salz sind produktabhängig.",
+      "ingredients": [
+        {
+          "name": "Möhren",
+          "grams": 150,
+          "source": "bls",
+          "id": "G620100"
+        },
+        {
+          "name": "Knoblauchzehe",
+          "grams": 5,
+          "source": "bls",
+          "id": "G490100"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 20,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Zwiebel",
+          "grams": 80,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Gyros-Geschnetzeltes",
+          "grams": 500,
+          "source": "bls",
+          "id": "Y384112",
+          "note": "Cookidoo: Gyros-Geschnetzeltes; als gegartes/gewürztes Schweinegyros modelliert"
+        },
+        {
+          "name": "Gnocchi aus der Kühltheke",
+          "grams": 500,
+          "source": "rewe",
+          "id": "941231"
+        },
+        {
+          "name": "Zucchini",
+          "grams": 300,
+          "source": "bls",
+          "id": "G582100"
+        },
+        {
+          "name": "Salz",
+          "grams": 5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1 TL plus Würzen; Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1/2 TL plus Würzen, Menge für Energie ignoriert"
+        },
+        {
+          "name": "Stückige Tomaten",
+          "grams": 400,
+          "source": "rewe",
+          "id": "7211940"
+        },
+        {
+          "name": "Tomatenmark",
+          "grams": 50,
+          "source": "rewe",
+          "id": "7129194"
+        },
+        {
+          "name": "Wasser",
+          "grams": 100,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Basilikum, getrocknet",
+          "grams": 2,
+          "source": "bls",
+          "id": "R231000",
+          "note": "1 TL grob als 2 g modelliert"
+        }
+      ]
+    }
+  ]
+}

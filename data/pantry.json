@@ -302,6 +302,20 @@
       }
     },
     {
+      "name": "Basilikum, gerebelt",
+      "cookidoo_name": "Basilikum, getrocknet",
+      "aliases": [
+        "Basilikum, getrocknet",
+        "Basilikum getrocknet",
+        "Basilikum, gerebelt",
+        "Basilikum gerebelt",
+        "Basilikum"
+      ],
+      "category": "spice",
+      "expires": "2029-01-31",
+      "source_text": "01/29"
+    },
+    {
       "name": "Kräutersalz",
       "cookidoo_name": "Kräutersalz",
       "aliases": [

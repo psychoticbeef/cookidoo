@@ -70,3 +70,19 @@ laufenden Jahr nicht wiederholt werden.
   - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 841 kcal und 39,3 g Eiweiss je Mahlzeit.
   - Hinweis: bestehender Montagseintrag aus der Vorwoche; etwas ueber 800 kcal, Protein im akzeptablen Bereich.
   - Einfrieren: Sauce gut einfrierbar; mit Pasta wird es weicher, fuer Mealprep im Kuehlschrank aber gut.
+
+## KW 23, 2026-05-30 bis 2026-06-05
+
+- Fisch: Lachs-Fenchel-Risotto — https://cookidoo.de/recipes/recipe/de-DE/r128176
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 816 kcal und 37,8 g Eiweiss je Mahlzeit.
+  - Hinweis: kalorisch knapp ueber 800 kcal; Protein im akzeptablen Bereich.
+  - Einfrieren: eher nicht ideal; Risotto und Lachs zuerst/zeitnah essen, beim Aufwaermen vorsichtig.
+- Vegetarisch: Linsen-Tomaten-Suppe — https://cookidoo.de/recipes/recipe/de-DE/r790381
+  - Cookidoo: 6 Portionen, in 3 echte Mahlzeiten teilen, ca. 652 kcal und 31,6 g Eiweiss je Mahlzeit.
+  - Hinweis: spontaner Ersatz fuer den verschobenen Sonntagseintrag; Protein im akzeptablen Bereich, Salzschaetzung wegen Bruehpaste grob.
+  - Einfrieren: gut moeglich; ohne Garnitur einfrieren, Creme fraiche besser beim Aufwaermen frisch einruehren oder Kuehlschrank-Mealprep nutzen.
+  - Umplanung: Der urspruengliche Sonntagseintrag wurde auf Sonntag, 2026-06-07 verschoben und zaehlt in KW 23 nicht als gekocht.
+- Fleisch: Tomaten-Geschnetzeltes mit Gnocchi und Zucchini — https://cookidoo.de/recipes/recipe/de-DE/r476261
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 791 kcal und 50,6 g Eiweiss je Mahlzeit.
+  - Hinweis: Montagsgericht mit niedrigem aktivem Aufwand; Gyros-Fett und Salz sind produktabhaengig.
+  - Einfrieren: moeglich; Gnocchi und Zucchini werden weicher, im Kuehlschrank fuer Mealprep gut.
