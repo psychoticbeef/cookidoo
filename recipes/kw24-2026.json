@@ -1,0 +1,363 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "week": "KW 24, 2026-06-06 bis 2026-06-12",
+  "recipes": [
+    {
+      "id": "r128182",
+      "title": "Orzo-Pasta mit Lachs und Spinat",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r128182",
+      "week_label": "KW 24 (06.-12.06.)",
+      "category": "Samstag Fisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.4,
+      "rating_count": "1.2K",
+      "difficulty": "einfach",
+      "work_time": "25 Min",
+      "total_time": "40 Min",
+      "estimate_context": "BLS/REWE, Gemüsebrühe als Vegeta-Default, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 560,
+        "protein": 28,
+        "fat": 32,
+        "fiber": 4.1,
+        "carbs": 37
+      },
+      "freezer_note": "eher nicht ideal; Lachs und Sahnesauce zuerst/zeitnah essen, im Kühlschrank für Mealprep gut",
+      "note": "Protein liegt im akzeptablen 30-39-g-Bereich; als Fischgericht bewusst nicht noch ein Spargelgericht, weil Sonntag bereits Linsen-Spargelsalat eingeplant ist.",
+      "ingredients": [
+        {
+          "name": "Knoblauchzehe",
+          "grams": 5,
+          "source": "bls",
+          "id": "G490100"
+        },
+        {
+          "name": "Zwiebeln",
+          "grams": 80,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 20,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Lachsfilets, frisch, ohne Haut",
+          "grams": 375,
+          "source": "bls",
+          "id": "T410100"
+        },
+        {
+          "name": "Paprika edelsüß",
+          "grams": 4,
+          "source": "rewe",
+          "id": "4248406",
+          "note": "2 TL grob als 4 g modelliert"
+        },
+        {
+          "name": "Dill",
+          "grams": 0,
+          "note": "2 Stängel, Menge klein/ignoriert"
+        },
+        {
+          "name": "Wasser",
+          "grams": 600,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste für Gemüsebrühe",
+          "grams": 10,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "Cookidoo 1 geh. TL; Vegeta-Default, Salzaufnahme grob"
+        },
+        {
+          "name": "Salz",
+          "grams": 3.75,
+          "source": "bls",
+          "id": "R111000",
+          "note": "Cookidoo 1/2-1 TL; Mitte als 3,75 g modelliert, Salzaufnahme grob"
+        },
+        {
+          "name": "Risoni-Nudeln",
+          "grams": 170,
+          "source": "bls",
+          "id": "E401000",
+          "note": "Orzo/Kritharaki als eifreie trockene Teigwaren modelliert"
+        },
+        {
+          "name": "Blattspinat, frisch",
+          "grams": 200,
+          "source": "bls",
+          "id": "G211100"
+        },
+        {
+          "name": "Cherry-Tomaten",
+          "grams": 100,
+          "source": "bls",
+          "id": "G561100"
+        },
+        {
+          "name": "Sahne",
+          "grams": 200,
+          "source": "bls",
+          "id": "M173800",
+          "note": "Schlagsahne 30 % Fett"
+        },
+        {
+          "name": "Maisstärke",
+          "grams": 6,
+          "source": "bls",
+          "id": "C446000",
+          "note": "2 TL grob als 6 g modelliert"
+        },
+        {
+          "name": "Zitronensaft",
+          "grams": 15,
+          "source": "bls",
+          "id": "F601600"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "Menge klein/ignoriert"
+        }
+      ]
+    },
+    {
+      "id": "r103250",
+      "title": "Warmer Linsen-Spargelsalat",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r103250",
+      "week_label": "KW 24 (06.-12.06.)",
+      "category": "Sonntag Vegetarisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.6,
+      "rating_count": "248",
+      "difficulty": "einfach",
+      "work_time": "30 Min",
+      "total_time": "1 Std.",
+      "estimate_context": "BLS/REWE, 4 Eier, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 595,
+        "protein": 27,
+        "fat": 37,
+        "fiber": 11.3,
+        "carbs": 30
+      },
+      "freezer_note": "eher nicht ideal; Eier, Spargel und Salattextur besser im Kühlschrank zeitnah essen",
+      "note": "Bereits vorhandener Sonntagseintrag; Cookidoo-Notiz und Wochenplan unverändert gelassen.",
+      "cookidoo_note": "KW 24 (06.-12.06.): Sonntag Vegetarisch. 4 Cookidoo-Portionen kochen -> 3 Wochenportionen.\n\nNaehrwerte geschaetzt (BLS/REWE, 4 Eier, Salz grob), je Wochenportion:\nEnergie 3446 kJ / 824 kcal\nFett 51,7 g\n  davon gesaettigte Fettsaeuren 11,3 g\nKohlenhydrate 43,1 g\n  davon Zucker 13,3 g\nBallaststoffe 15,5 g\nEiweiss 37,4 g\nSalz 2,0 g\n\nEinfrieren: eher nicht ideal; Eier, Spargel und Salattextur besser im Kuehlschrank zeitnah essen.\n\nSaisonaler Spargelsalat; Protein liegt im akzeptablen 30-39-g-Bereich, die Arbeitszeit ist mit 30 Minuten aber hoeher als Montag.",
+      "ingredients": [
+        {
+          "name": "Puylinsen, getrocknet",
+          "grams": 200,
+          "source": "bls",
+          "id": "H725100",
+          "note": "als reife Linsen modelliert"
+        },
+        {
+          "name": "Wasser",
+          "grams": 1700,
+          "note": "ignoriert"
+        },
+        {
+          "name": "grüner Spargel",
+          "grams": 500,
+          "source": "bls",
+          "id": "G450100"
+        },
+        {
+          "name": "frische Petersilie",
+          "grams": 10,
+          "source": "bls",
+          "id": "G250100",
+          "note": "2 EL grob als 10 g modelliert"
+        },
+        {
+          "name": "frische Minze",
+          "grams": 0,
+          "note": "2 EL, Menge klein/kein stabiler Match"
+        },
+        {
+          "name": "rote Zwiebeln",
+          "grams": 80,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 80,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Zitronensaft",
+          "grams": 50,
+          "source": "bls",
+          "id": "F601600"
+        },
+        {
+          "name": "Honig",
+          "grams": 15,
+          "source": "bls",
+          "id": "S120000",
+          "note": "2 TL grob als 15 g modelliert"
+        },
+        {
+          "name": "Salz",
+          "grams": 2.5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1/2 TL grob als 2,5 g modelliert, Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "3 Prisen, Menge klein/ignoriert"
+        },
+        {
+          "name": "Kreuzkümmel, gemahlen",
+          "grams": 1,
+          "note": "1/2 TL, Menge klein/ignoriert"
+        },
+        {
+          "name": "Eier",
+          "grams": 220,
+          "source": "bls",
+          "id": "E111100",
+          "note": "4 Eier nach Geschmack, essbarer Anteil grob als 220 g modelliert"
+        },
+        {
+          "name": "Pinienkerne",
+          "grams": 40,
+          "source": "rewe",
+          "id": "1460408"
+        },
+        {
+          "name": "Feta",
+          "grams": 100,
+          "source": "bls",
+          "id": "M012200"
+        }
+      ]
+    },
+    {
+      "id": "r690600",
+      "title": "Hähnchen in Zwiebel-Senfsauce",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r690600",
+      "week_label": "KW 24 (06.-12.06.)",
+      "category": "Montag Fleisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.5,
+      "rating_count": "6.0K",
+      "difficulty": "einfach",
+      "work_time": "10 Min",
+      "total_time": "30 Min",
+      "estimate_context": "BLS/REWE, Spätzle aus dem Kühlregal, Gemüsebrühe als Vegeta-Default, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 566,
+        "protein": 35,
+        "fat": 26,
+        "fiber": 0.4,
+        "carbs": 46
+      },
+      "freezer_note": "möglich; Spätzle werden weicher, Sauce und Hähnchen halten im Kühlschrank gut",
+      "note": "Montagsgericht mit sehr niedrigem aktivem Aufwand; Salz ist wegen Brühe, Röstzwiebeln und Spätzle produktabhängig.",
+      "ingredients": [
+        {
+          "name": "Petersilie",
+          "grams": 10,
+          "source": "bls",
+          "id": "G250100",
+          "note": "5 Stängel grob als 10 g modelliert"
+        },
+        {
+          "name": "Röstzwiebeln",
+          "grams": 40,
+          "source": "rewe",
+          "id": "1209186"
+        },
+        {
+          "name": "Hähnchenbrust",
+          "grams": 400,
+          "source": "rewe",
+          "id": "8342820"
+        },
+        {
+          "name": "Salz",
+          "grams": 5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1 TL plus Würzen; Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1/2 TL, Menge klein/ignoriert"
+        },
+        {
+          "name": "körniger Senf",
+          "grams": 30,
+          "source": "rewe",
+          "id": "7888872",
+          "note": "3 TL grob als 30 g modelliert"
+        },
+        {
+          "name": "Paprika rosenscharf",
+          "grams": 2,
+          "source": "rewe",
+          "id": "4248430",
+          "note": "1 TL grob als 2 g modelliert"
+        },
+        {
+          "name": "Cayenne-Pfeffer, gemahlen",
+          "grams": 0,
+          "note": "1/2 TL, Menge klein/ignoriert"
+        },
+        {
+          "name": "Spätzle, frisch",
+          "grams": 500,
+          "source": "rewe",
+          "id": "1065968"
+        },
+        {
+          "name": "Wasser",
+          "grams": 400,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste für Gemüsebrühe",
+          "grams": 10,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "Cookidoo 1 geh. TL; Vegeta-Default, Salzaufnahme grob"
+        },
+        {
+          "name": "Sahne",
+          "grams": 200,
+          "source": "bls",
+          "id": "M173800",
+          "note": "Schlagsahne 30 % Fett"
+        },
+        {
+          "name": "Speisestärke",
+          "grams": 25,
+          "source": "bls",
+          "id": "C446000"
+        },
+        {
+          "name": "Frühlingszwiebeln",
+          "grams": 50,
+          "source": "bls",
+          "id": "G482100",
+          "note": "2 Stück grob als 50 g modelliert"
+        }
+      ]
+    }
+  ]
+}

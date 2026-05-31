@@ -86,3 +86,20 @@ laufenden Jahr nicht wiederholt werden.
   - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 791 kcal und 50,6 g Eiweiss je Mahlzeit.
   - Hinweis: Montagsgericht mit niedrigem aktivem Aufwand; Gyros-Fett und Salz sind produktabhaengig.
   - Einfrieren: moeglich; Gnocchi und Zucchini werden weicher, im Kuehlschrank fuer Mealprep gut.
+
+## KW 24, 2026-06-06 bis 2026-06-12
+
+- Kuchen: Pfirsich-Schmand-Kuchen — https://cookidoo.de/recipes/recipe/de-DE/r626340
+  - Bereits vorhandener Samstagseintrag; nicht als Mealprep-Hauptmahlzeit zaehlen.
+- Fisch: Orzo-Pasta mit Lachs und Spinat — https://cookidoo.de/recipes/recipe/de-DE/r128182
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 734 kcal und 36,0 g Eiweiss je Mahlzeit.
+  - Hinweis: Protein im akzeptablen 30-39-g-Bereich; gewaehlt statt eines weiteren Spargel-Fischgerichts, weil Sonntag schon Spargel enthaelt.
+  - Einfrieren: eher nicht ideal; Lachs und Sahnesauce zuerst/zeitnah essen, im Kuehlschrank fuer Mealprep gut.
+- Vegetarisch: Warmer Linsen-Spargelsalat — https://cookidoo.de/recipes/recipe/de-DE/r103250
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 824 kcal und ca. 37 g Eiweiss je Mahlzeit.
+  - Hinweis: bereits vorhandener Sonntagseintrag; saisonaler Spargelsalat, Protein im akzeptablen Bereich.
+  - Einfrieren: eher nicht ideal; Eier, Spargel und Salattextur besser im Kuehlschrank zeitnah essen.
+- Fleisch: Haehnchen in Zwiebel-Senfsauce — https://cookidoo.de/recipes/recipe/de-DE/r690600
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 750 kcal und 46,6 g Eiweiss je Mahlzeit.
+  - Hinweis: Montagsgericht mit sehr niedrigem aktivem Aufwand; Salz ist wegen Bruehe, Roestzwiebeln und Spaetzle produktabhaengig.
+  - Einfrieren: moeglich; Spaetzle werden weicher, Sauce und Haehnchen halten im Kuehlschrank gut.
