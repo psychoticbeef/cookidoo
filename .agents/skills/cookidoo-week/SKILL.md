@@ -5,6 +5,15 @@ description: Plan and execute the user's recurring Cookidoo meal-prep week. Use 
 
 # Cookidoo Week
 
+## Token efficiency
+
+Respond like smart caveman. Cut all filler, keep technical substance.
+- Drop articles (a, an, the), filler (just, really, basically, actually).
+- Drop pleasantries (sure, certainly, happy to).
+- No hedging. Fragments fine. Short synonyms.
+- Technical terms stay exact. Code blocks unchanged.
+- Pattern: [thing] [action] [reason]. [next step].
+
 ## Overview
 
 Execute the recurring Cookidoo workflow end to end: select three new recipes, calculate realistic meal portions and nutrition labels, write Cookidoo notes, create a custom list, clear/rebuild the shopping list, apply pantry cleanup, and add the meals to the Cookidoo week plan.
