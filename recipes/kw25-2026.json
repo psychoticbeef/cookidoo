@@ -1,0 +1,350 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "week": "KW 25, 2026-06-13 bis 2026-06-19",
+  "recipes": [
+    {
+      "id": "r368845",
+      "title": "Fisch mit Bröselkruste",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r368845",
+      "week_label": "KW 25 (13.-19.06.)",
+      "category": "Samstag Fisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.5,
+      "rating_count": "89",
+      "difficulty": "einfach",
+      "work_time": "30 Min",
+      "total_time": "1 Std.",
+      "estimate_context": "BLS/REWE, Gemüsebrühe als Vegeta-Default, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 584,
+        "protein": 39,
+        "fat": 25,
+        "carbs": 44
+      },
+      "freezer_note": "eher nicht ideal; Lachs und Bröselkruste zuerst/zeitnah essen, Kartoffeln und Gemüse im Kühlschrank gut",
+      "note": "Erneut Lachs, aber als anderes Gericht mit Fenchel, Porree, Kartoffeln und Bröselkruste gewählt; weiße-Fisch-Alternativen hatten schlechtere Ratings oder unpassende Portionen.",
+      "ingredients": [
+        {
+          "name": "Fenchelsaat",
+          "grams": 0,
+          "note": "1 TL, Menge klein/kein stabiler Match"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1/4 TL und zusätzlich zum Abschmecken, Menge klein/ignoriert"
+        },
+        {
+          "name": "Weizenknäckebrot",
+          "grams": 50,
+          "source": "bls",
+          "id": "B6A1000"
+        },
+        {
+          "name": "Butter",
+          "grams": 30,
+          "source": "bls",
+          "id": "Q630000"
+        },
+        {
+          "name": "Fenchel",
+          "grams": 250,
+          "source": "bls",
+          "id": "G430100"
+        },
+        {
+          "name": "Zwiebel",
+          "grams": 80,
+          "source": "bls",
+          "id": "G480100",
+          "note": "1 Zwiebel grob als 80 g modelliert"
+        },
+        {
+          "name": "Porree",
+          "grams": 200,
+          "source": "bls",
+          "id": "G470100"
+        },
+        {
+          "name": "Mehl",
+          "grams": 6,
+          "source": "bls",
+          "id": "C214100",
+          "note": "2 TL grob als 6 g modelliert"
+        },
+        {
+          "name": "Milch",
+          "grams": 250,
+          "source": "bls",
+          "id": "M113300",
+          "note": "Vollmilch 3,5 % Fett"
+        },
+        {
+          "name": "Wasser",
+          "grams": 100,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Cayenne-Pfeffer",
+          "grams": 0,
+          "pantry_names": [
+            "Cayennepfeffer"
+          ],
+          "note": "2 Prisen, Menge klein/ignoriert"
+        },
+        {
+          "name": "Muskat",
+          "grams": 0,
+          "pantry_names": [
+            "Muskatnuss"
+          ],
+          "note": "1 Prise, Menge klein/ignoriert"
+        },
+        {
+          "name": "Gewürzpaste für Gemüsebrühe, selbst gemacht",
+          "grams": 5,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "Cookidoo 1 TL; Vegeta-Default, Salzaufnahme grob"
+        },
+        {
+          "name": "Kartoffeln",
+          "grams": 700,
+          "source": "bls",
+          "id": "K110100",
+          "note": "geschälte rohe Kartoffeln"
+        },
+        {
+          "name": "Salz",
+          "grams": 2,
+          "source": "bls",
+          "id": "R111000",
+          "note": "Prisen plus Kochwasser/Abschmecken grob modelliert"
+        },
+        {
+          "name": "Lachsfilet, frisch, ohne Haut",
+          "grams": 600,
+          "source": "bls",
+          "id": "T410100"
+        }
+      ]
+    },
+    {
+      "id": "r51875",
+      "title": "Königsberger Klopse mit Kartoffeln",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r51875",
+      "week_label": "KW 25 (13.-19.06.)",
+      "category": "Montag Fleisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.7,
+      "rating_count": "14.2K",
+      "difficulty": "einfach",
+      "work_time": "10 Min",
+      "total_time": "45 Min",
+      "estimate_context": "BLS/REWE, Fleischbrühe-Pulver und Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 611,
+        "protein": 29,
+        "fat": 34,
+        "fiber": 3.6,
+        "carbs": 46
+      },
+      "freezer_note": "möglich; Klopse und Sauce gut, Kartoffeln werden beim Einfrieren weicher, Kühlschrank-Mealprep besser",
+      "note": "Sehr gutes Rating und niedrige aktive Arbeitszeit; Protein liegt im akzeptablen Bereich, Salz ist wegen Brühe und Kapern grob.",
+      "ingredients": [
+        {
+          "name": "Brötchen",
+          "grams": 40,
+          "source": "bls",
+          "id": "B511000",
+          "note": "altbackenes Weizenbrötchen"
+        },
+        {
+          "name": "Zwiebeln",
+          "grams": 100,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Ei",
+          "grams": 55,
+          "source": "bls",
+          "id": "E111100",
+          "note": "1 Ei Größe M, essbarer Anteil grob"
+        },
+        {
+          "name": "Salz",
+          "grams": 10,
+          "source": "bls",
+          "id": "R111000",
+          "note": "2 TL gesamt; Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1/2 TL gesamt, Menge klein/ignoriert"
+        },
+        {
+          "name": "Hackfleisch, gemischt",
+          "grams": 400,
+          "source": "bls",
+          "id": "U050100"
+        },
+        {
+          "name": "Wasser",
+          "grams": 800,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste für Fleischbrühe, selbst gemacht",
+          "grams": 10,
+          "source": "bls",
+          "id": "R811000",
+          "note": "1 geh. TL bzw. 1 Würfel; als Fleischbrühe-Pulver modelliert, Salzaufnahme grob"
+        },
+        {
+          "name": "Kartoffeln",
+          "grams": 700,
+          "source": "bls",
+          "id": "K110100",
+          "note": "geschälte rohe Kartoffeln"
+        },
+        {
+          "name": "Sahne",
+          "grams": 200,
+          "source": "bls",
+          "id": "M173800",
+          "note": "Schlagsahne 30 % Fett"
+        },
+        {
+          "name": "Zitronensaft",
+          "grams": 5,
+          "source": "bls",
+          "id": "F601600",
+          "note": "1 TL grob als 5 g modelliert"
+        },
+        {
+          "name": "Mehl",
+          "grams": 50,
+          "source": "bls",
+          "id": "C214100"
+        },
+        {
+          "name": "Kapern, eingelegt",
+          "grams": 60,
+          "source": "rewe",
+          "id": "710582"
+        }
+      ]
+    },
+    {
+      "id": "r913107",
+      "title": "Gebackener Rosenkohl mit Kartoffelecken, Eiern und Senfsauce",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r913107",
+      "week_label": "KW 25 (13.-19.06.)",
+      "category": "Sonntag Vegetarisch",
+      "cookidoo_portions": 3,
+      "real_portions": 3,
+      "rating": 4.6,
+      "rating_count": "333",
+      "difficulty": "einfach",
+      "work_time": "20 Min",
+      "total_time": "55 Min",
+      "estimate_context": "BLS/REWE, Gemüsebrühe als Vegeta-Default, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 646,
+        "protein": 29,
+        "fat": 34,
+        "fiber": 12.9,
+        "sat_fat": 12,
+        "carbs": 62
+      },
+      "freezer_note": "eher nicht ideal; Eier und Kartoffelecken besser im Kühlschrank, Sauce getrennt aufwärmen",
+      "note": "Exakt 3 gelistete Cookidoo-Portionen passen direkt zu 3 Wochenportionen; lokale Schätzung liegt bei 32 g Protein, Cookidoo bei 29 g. Saisonaler Haken: Rosenkohl ist im Juni nicht ideal.",
+      "ingredients": [
+        {
+          "name": "Rosenkohl",
+          "grams": 575,
+          "source": "bls",
+          "id": "G332100",
+          "note": "Cookidoo 550-600 g, Mitte als 575 g modelliert"
+        },
+        {
+          "name": "Kartoffeln",
+          "grams": 600,
+          "source": "bls",
+          "id": "K120100",
+          "note": "mit Schale"
+        },
+        {
+          "name": "Öl",
+          "grams": 30,
+          "source": "bls",
+          "id": "Q180000",
+          "note": "Cookidoo generisch 'Öl', als Rapsöl modelliert"
+        },
+        {
+          "name": "Salz",
+          "grams": 7.5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1 1/2 TL grob als 7,5 g modelliert, Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1/2 TL, Menge klein/ignoriert"
+        },
+        {
+          "name": "Knoblauch, granuliert",
+          "grams": 0,
+          "pantry_names": [
+            "Knoblauchpulver"
+          ],
+          "note": "3/4 TL, Menge klein/ignoriert"
+        },
+        {
+          "name": "Eier",
+          "grams": 330,
+          "source": "bls",
+          "id": "E111100",
+          "note": "6 Eier Größe M, essbarer Anteil grob"
+        },
+        {
+          "name": "Wasser",
+          "grams": 1200,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Frischkäse",
+          "grams": 100,
+          "source": "bls",
+          "id": "M820600",
+          "note": "Natur, ca. 45 % Fett i. Tr."
+        },
+        {
+          "name": "Speisestärke",
+          "grams": 25,
+          "source": "bls",
+          "id": "C446000"
+        },
+        {
+          "name": "Senf",
+          "grams": 35,
+          "source": "rewe",
+          "id": "6685935",
+          "note": "mittelscharfer Senf"
+        },
+        {
+          "name": "Gewürzpaste für Gemüsebrühe, selbst gemacht",
+          "grams": 10,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "Cookidoo 1 geh. TL; Vegeta-Default, Salzaufnahme grob"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "event": "Snack, 2026-05-17",
+  "recipes": [
+    {
+      "id": "r508208",
+      "title": "Powerriegel",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r508208",
+      "week_label": "Snack",
+      "category": "Powerriegel",
+      "cookidoo_portions": 14,
+      "real_portions": 14,
+      "rating": 4.2,
+      "rating_count": "107",
+      "estimate_context": "BLS/REWE/dm, Sportness Whey Vanille, Schwartau Extra Erdbeere, Zimt 5 g",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 184,
+        "protein": 8,
+        "fat": 10,
+        "fiber": 2.9,
+        "carbs": 15
+      },
+      "freezer_note": "im Kühlschrank lagern; für unterwegs erst kurz vorher einpacken",
+      "note": "Tour-Variante mit normaler Konfitüre statt Xucker, weil echte Kohlenhydrate für lange Radtouren sinnvoller sind. Lokale Rechnung nutzt konkrete Produktmatches; Proteinpulver und Konfitüre können je nach gekauftem Produkt merklich abweichen.",
+      "cookidoo_note": "Tour-Variante Originalgröße: 14 Riegel, mit normaler Erdbeerkonfitüre statt Xucker/kalorienreduziertem Fruchtaufstrich, weil echte KH auf langen Radtouren sinnvoller sind.\n\nLokale Schätzung (BLS/REWE/dm; Sportness Whey Vanille, Schwartau Extra Erdbeere), gesamt:\nEnergie 11623 kJ / 2778 kcal\nFett 146,0 g\n  davon gesättigte Fettsäuren 69,5 g\nKohlenhydrate 224,7 g\n  davon Zucker 85,4 g\nBallaststoffe 43,5 g\nEiweiß 119,6 g\nSalz 1,2 g\n\nJe Riegel: 830 kJ / 198 kcal, KH 16,0 g, Eiweiß 8,5 g, Fett 10,4 g.\n\nPro 100 g (Basis Zutatengewicht ca. 805 g, vor Backen): 1444 kJ / 345 kcal; Fett 18,1 g (ges. 8,6); KH 27,9 g (Zucker 10,6); Ballastst. 5,4 g; Eiweiß 14,9 g; Salz 0,2 g.\n\nFür Tour: 3-4 Riegel = ca. 594-792 kcal, 48-64 g KH und 25,5-34,0 g Eiweiß. Zusätzlich schnelle KH über Getränk/Gels/Süßkram einplanen.",
+      "ingredients": [
+        {
+          "name": "Haferflocken, zart",
+          "grams": 200,
+          "source": "rewe",
+          "id": "3011204"
+        },
+        {
+          "name": "Zimt",
+          "grams": 5,
+          "source": "rewe",
+          "id": "4244630",
+          "note": "2 TL als 5 g modelliert"
+        },
+        {
+          "name": "Proteinpulver, Vanille-Geschmack",
+          "grams": 80,
+          "source": "dm",
+          "id": "4066447484809",
+          "note": "Sportness Whey Proteinpulver Vanille Geschmack"
+        },
+        {
+          "name": "Cashewmus",
+          "grams": 80,
+          "source": "dm",
+          "id": "4066447857115"
+        },
+        {
+          "name": "Erdbeerkonfitüre",
+          "grams": 80,
+          "source": "rewe",
+          "id": "9273913",
+          "note": "Tour-Variante: Schwartau Extra Erdbeere statt Xucker/kalorienreduziertem Fruchtaufstrich"
+        },
+        {
+          "name": "Mandeldrink, ungesüßt",
+          "grams": 200,
+          "source": "bls",
+          "id": "H800000"
+        },
+        {
+          "name": "Zartbitter-Schokolade 70%",
+          "grams": 100,
+          "source": "rewe",
+          "id": "8007642"
+        },
+        {
+          "name": "Öl",
+          "grams": 10,
+          "source": "bls",
+          "id": "Q180000",
+          "note": "als Rapsöl modelliert"
+        },
+        {
+          "name": "Kokosraspeln",
+          "grams": 50,
+          "source": "rewe",
+          "id": "2437191"
+        }
+      ]
+    }
+  ]
+}

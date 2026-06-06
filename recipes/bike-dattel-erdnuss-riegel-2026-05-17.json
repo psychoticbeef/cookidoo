@@ -1,0 +1,58 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "event": "Bike-Tour-Snack, 2026-05-17",
+  "source_url": "https://www.bike-magazin.de/training/ernaehrung/dattel-erdnuss-riegel/",
+  "recipes": [
+    {
+      "id": "bike-dattel-erdnuss-riegel",
+      "title": "Dattel-Erdnuss-Riegel",
+      "url": "https://www.bike-magazin.de/training/ernaehrung/dattel-erdnuss-riegel/",
+      "week_label": "Bike-Tour-Snack",
+      "category": "Energieriegel",
+      "cookidoo_portions": 12,
+      "real_portions": 12,
+      "estimate_context": "BLS/REWE/dm, 12 Taler aus BIKE-Zutaten, Salz aus Erdnüssen/Erdnussbutter",
+      "freezer_note": "gut vorzubereiten; einzeln in Backpapier wickeln und einfrieren oder gekühlt transportieren",
+      "note": "Thermomix-adaptierte Custom-Kreation nach BIKE Dattel-Erdnuss-Riegel. Quelle nennt 10-15 Stück; hier als 12 tourtaugliche Taler geplant.",
+      "ingredients": [
+        {
+          "name": "Datteln, entsteint",
+          "grams": 200,
+          "source": "dm",
+          "id": "4067796166859"
+        },
+        {
+          "name": "Haferflocken",
+          "grams": 100,
+          "source": "rewe",
+          "id": "3011204"
+        },
+        {
+          "name": "Erdnüsse, geröstet und gesalzen",
+          "grams": 70,
+          "source": "rewe",
+          "id": "9030538"
+        },
+        {
+          "name": "Reissirup",
+          "grams": 100,
+          "source": "dm",
+          "id": "4066447398663"
+        },
+        {
+          "name": "Quinoa, gepufft",
+          "grams": 20,
+          "source": "bls",
+          "id": "C530200"
+        },
+        {
+          "name": "Erdnussbutter",
+          "grams": 70,
+          "source": "rewe",
+          "id": "946608",
+          "note": "REWE Bio Creamy Erdnussbutter"
+        }
+      ]
+    }
+  ]
+}

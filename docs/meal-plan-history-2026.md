@@ -103,3 +103,18 @@ laufenden Jahr nicht wiederholt werden.
   - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 750 kcal und 46,6 g Eiweiss je Mahlzeit.
   - Hinweis: Montagsgericht mit sehr niedrigem aktivem Aufwand; Salz ist wegen Bruehe, Roestzwiebeln und Spaetzle produktabhaengig.
   - Einfrieren: moeglich; Spaetzle werden weicher, Sauce und Haehnchen halten im Kuehlschrank gut.
+
+## KW 25, 2026-06-13 bis 2026-06-19
+
+- Fisch: Fisch mit Broeselkruste — https://cookidoo.de/recipes/recipe/de-DE/r368845
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 812 kcal und 52,7 g Eiweiss je Mahlzeit.
+  - Hinweis: erneut Lachs, aber anderes Gericht mit Fenchel, Porree, Kartoffeln und Broeselkruste; weisse-Fisch-Alternativen hatten schlechtere Ratings oder unpassende Portionen.
+  - Einfrieren: eher nicht ideal; Lachs und Broeselkruste zuerst/zeitnah essen, Kartoffeln und Gemuese im Kuehlschrank gut.
+- Vegetarisch: Gebackener Rosenkohl mit Kartoffelecken, Eiern und Senfsauce — https://cookidoo.de/recipes/recipe/de-DE/r913107
+  - Cookidoo: 3 Portionen, direkt 3 echte Mahlzeiten, ca. 591 kcal und 32,2 g Eiweiss je Mahlzeit.
+  - Hinweis: Portionierung passt sauber; saisonaler Haken, weil Rosenkohl im Juni nicht ideal ist.
+  - Einfrieren: eher nicht ideal; Eier und Kartoffelecken besser im Kuehlschrank, Sauce getrennt aufwaermen.
+- Fleisch: Koenigsberger Klopse mit Kartoffeln — https://cookidoo.de/recipes/recipe/de-DE/r51875
+  - Cookidoo: 4 Portionen, in 3 echte Mahlzeiten teilen, ca. 858 kcal und 37,7 g Eiweiss je Mahlzeit.
+  - Hinweis: Montagsgericht mit niedriger aktiver Arbeitszeit; Salz ist wegen Bruehe und Kapern grob.
+  - Einfrieren: moeglich; Klopse und Sauce gut, Kartoffeln werden beim Einfrieren weicher, Kuehlschrank-Mealprep besser.
