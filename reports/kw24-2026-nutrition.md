@@ -1,4 +1,4 @@
-# Cookidoo nutrition estimate
+# Cookidoo Nutrition Estimate
 
 ## Orzo-Pasta mit Lachs und Spinat
 
@@ -9,7 +9,7 @@
 - Geschätzt pro Cookidoo-Portion: 550 kcal | KH 36,2 g | Zucker 5,7 g | Eiweiß 27,0 g | Fett 32,4 g | ges. FS 11,4 g | Ballastst. 3,5 g | Salz 1,8 g
 - Geschätzt pro echter Portion: 734 kcal | KH 48,3 g | Zucker 7,6 g | Eiweiß 36,0 g | Fett 43,2 g | ges. FS 15,3 g | Ballastst. 4,7 g | Salz 2,4 g
 - Einfrieren: eher nicht ideal; Lachs und Sahnesauce zuerst/zeitnah essen, im Kühlschrank für Mealprep gut
-- Hinweis: Protein liegt im akzeptablen 30-39-g-Bereich; als Fischgericht bewusst nicht noch ein Spargelgericht, weil Sonntag bereits Linsen-Spargelsalat eingeplant ist.
+- Hinweis: Protein im akzeptablen 30-39-g-Bereich; kein weiteres Spargel-Fischgericht, weil Sonntag Linsen-Spargelsalat geplant ist.
 
 | Zutat | Menge | Match | kcal | Eiweiß | KH | Zucker | Fett | Salz |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
@@ -59,7 +59,7 @@ Protein liegt im akzeptablen 30-39-g-Bereich; als Fischgericht bewusst nicht noc
 - Geschätzt pro Cookidoo-Portion: 618 kcal | KH 32,4 g | Zucker 10,0 g | Eiweiß 27,4 g | Fett 39,2 g | ges. FS 8,5 g | Ballastst. 11,0 g | Salz 1,4 g
 - Geschätzt pro echter Portion: 824 kcal | KH 43,2 g | Zucker 13,3 g | Eiweiß 36,6 g | Fett 52,2 g | ges. FS 11,4 g | Ballastst. 14,6 g | Salz 1,9 g
 - Einfrieren: eher nicht ideal; Eier, Spargel und Salattextur besser im Kühlschrank zeitnah essen
-- Hinweis: Bereits vorhandener Sonntagseintrag; Cookidoo-Notiz und Wochenplan unverändert gelassen.
+- Hinweis: vorhandener Sonntagseintrag; Cookidoo-Notiz und Wochenplan unverändert gelassen.
 
 | Zutat | Menge | Match | kcal | Eiweiß | KH | Zucker | Fett | Salz |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
@@ -108,7 +108,7 @@ Saisonaler Spargelsalat; Protein liegt im akzeptablen 30-39-g-Bereich, die Arbei
 - Geschätzt pro Cookidoo-Portion: 562 kcal | KH 45,3 g | Zucker 3,8 g | Eiweiß 35,0 g | Fett 26,3 g | ges. FS 12,4 g | Ballastst. 1,1 g | Salz 4,0 g
 - Geschätzt pro echter Portion: 750 kcal | KH 60,4 g | Zucker 5,1 g | Eiweiß 46,6 g | Fett 35,1 g | ges. FS 16,5 g | Ballastst. 1,5 g | Salz 5,3 g
 - Einfrieren: möglich; Spätzle werden weicher, Sauce und Hähnchen halten im Kühlschrank gut
-- Hinweis: Montagsgericht mit sehr niedrigem aktivem Aufwand; Salz ist wegen Brühe, Röstzwiebeln und Spätzle produktabhängig.
+- Hinweis: Montagsgericht mit sehr niedrigem aktivem Aufwand; Salz wegen Brühe, Röstzwiebeln und Spätzle produktabhängig.
 
 | Zutat | Menge | Match | kcal | Eiweiß | KH | Zucker | Fett | Salz |
 |---|---:|---|---:|---:|---:|---:|---:|---:|

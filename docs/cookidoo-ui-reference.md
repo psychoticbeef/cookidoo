@@ -1,134 +1,124 @@
 # Cookidoo UI Reference
 
-Kurze Referenz fuer wiederholte Cookidoo-Arbeiten im In-App-Browser.
+Compact reference for repeated Cookidoo work in in-app browser.
 
-## Grundannahmen
+## Assumptions
 
-- Der normale Chrome-Login ist fuer Codex nicht sichtbar. Cookidoo muss im Codex-In-App-Browser eingeloggt sein.
-- Die Cookidoo-Session bleibt im In-App-Browser erhalten, wenn direkte Cookidoo-URLs geoeffnet werden.
-- Cookidoo-Notizen haengen am Rezept, nicht an einer Rezeptliste. Daher vorsichtig sein, wenn ein Rezept in mehreren Listen verwendet wird.
+- Normal Chrome login not visible to Codex. Cookidoo must be logged in inside Codex in-app browser.
+- Cookidoo session persists in in-app browser when direct Cookidoo URLs open.
+- Cookidoo notes attach to recipe, not recipe list. Be careful when recipe appears in multiple lists.
 
-## Wichtige URLs
+## URLs
 
 - Suche: `https://cookidoo.de/search/de-DE`
 - Meine Rezepte: `https://cookidoo.de/organize/de-DE/my-recipes`
 - Einkaufsliste: `https://cookidoo.de/shopping/de-DE`
 - Meine Woche: `https://cookidoo.de/planning/de-DE/my-week`
 
-Nuetzliche Suchfilter als URL-Parameter:
+Useful search filters as URL params:
 
 ```text
 languages=de&tmv=TM6&difficulty=easy&preparationTime=1800
 ```
 
-Beispiel:
+Example:
 
 ```text
 https://cookidoo.de/search/de-DE?languages=de&tmv=TM6&difficulty=easy&preparationTime=1800&query=Lachs
 ```
 
-## Kontextarme Verifikation
+## Low-Context Verification
 
-- Nach einem grossen Seitenwechsel reicht ein breiter Snapshot zur Orientierung.
-  Danach gezielte Checks verwenden: Listentitel, Rezeptanzahl, Notiz-Substring,
-  `Nach Rezepten N`, Planungsdatum und konkrete Pantry-Begriffe.
-- Bei der Einkaufsliste den aktiven Bereich vor `Bereits vorhandene Artikel`
-  getrennt pruefen. Sonst wirken bereits abgehakte Vorratsartikel wie offene
-  Einkaufspositionen.
-- Fuer wiederholte Rezeptaktionen kleine Browser-Helfer verwenden, z. B.
-  Rezeptseite oeffnen, Kontextmenue oeffnen, Menuepunkt klicken, Dialog
-  bestaetigen. Das spart Kontext gegenueber mehrfachen Vollsnapshots.
-- Wenn ein UI-Zustand nur visuell eindeutig ist, einen Screenshot fuer genau
-  diesen Bereich nutzen und danach wieder zu gezielten DOM-Pruefungen wechseln.
+- After big navigation, one broad snapshot for orientation. Then targeted checks: list title, recipe count, note substring, `Nach Rezepten N`, planning date, concrete pantry terms.
+- Shopping list: check active section before `Bereits vorhandene Artikel` separately. Otherwise checked pantry items look like open shopping items.
+- Repeated recipe actions: use small browser helpers, e.g. open recipe page, open context menu, click menu item, confirm dialog. Saves context versus repeated full snapshots.
+- If UI state only visually clear, screenshot exact area, then return to targeted DOM checks.
 
-## Rezeptlisten
+## Recipe Lists
 
-Liste erstellen:
+Create list:
 
-1. `Meine Rezepte` oeffnen.
-2. `Rezeptliste erstellen` anklicken.
-3. Titel eingeben.
+1. Open `Meine Rezepte`.
+2. Click `Rezeptliste erstellen`.
+3. Enter title.
 4. `Speichern`.
-5. Die neue Liste erscheint unter `Meine Rezeptlisten`.
+5. New list appears under `Meine Rezeptlisten`.
 
-Rezept zu Liste hinzufuegen:
+Add recipe to list:
 
-1. Rezeptseite oeffnen.
-2. Kontextmenue neben dem Merken-Icon oeffnen.
+1. Open recipe page.
+2. Open context menu next to save icon.
 3. `Zur Rezeptliste hinzufügen`.
-4. Ziel-Liste auswaehlen.
+4. Select target list.
 
-Rezept aus Liste entfernen:
+Remove recipe from list:
 
-1. Rezeptliste oeffnen.
-2. Kontextmenue am Rezept-Card oeffnen.
+1. Open recipe list.
+2. Open context menu on recipe card.
 3. `Entfernen`.
 
-Hinweis zur In-App-Browser-Ansicht: Bei schmaler/responsiver Ansicht kann eine
-direkte Custom-List-URL zunaechst nur die linke Listen-Navigation zeigen. Dann
-die Ziel-Liste in der Navigation anklicken; Cookidoo springt auf dieselbe URL mit
-`#main` und zeigt die Rezeptkarten.
+In-app browser note: narrow/responsive view can show only left list navigation on direct custom-list URL. Click target list in navigation; Cookidoo jumps to same URL with `#main` and shows recipe cards.
 
-## Einkaufsliste
+## Shopping List
 
-Einkaufsliste leeren:
+Clear shopping list:
 
-1. `https://cookidoo.de/shopping/de-DE` oeffnen.
-2. Drei-Punkte-Menue oeffnen.
+1. Open `https://cookidoo.de/shopping/de-DE`.
+2. Open three-dot menu.
 3. `Alle löschen`.
-4. Im Dialog nochmal `Alle löschen`.
-5. Erfolgszustand: `Deine Einkaufsliste ist leer`.
+4. Confirm `Alle löschen`.
+5. Success state: `Deine Einkaufsliste ist leer`.
 
-Rezept zur Einkaufsliste hinzufuegen:
+Add recipe to shopping list:
 
-1. Rezeptseite oeffnen.
-2. Kontextmenue neben dem Merken-Icon oeffnen.
+1. Open recipe page.
+2. Open context menu next to save icon.
 3. `Auf die Einkaufsliste`.
-4. Danach zeigt die Einkaufsliste bei `Nach Rezepten` die Anzahl der hinzugefuegten Rezepte, z. B. `Nach Rezepten 3`.
+4. Shopping list then shows added recipe count at `Nach Rezepten`, e.g. `Nach Rezepten 3`.
 
-Pantry-Bereinigung:
+Pantry cleanup:
 
-1. Nach dem Hinzufuegen der Rezepte Einkaufsliste oeffnen.
-2. Zutaten gegen `data/pantry.json` pruefen. Dabei `cookidoo_name` als UI-Wortlaut und `name` als tatsaechlichen Vorrat lesen.
-3. Wasser, Olivenoel, Oel/Rapsoel, Butter/ungesalzene Butter, Essig/weissen Essig, Pfeffer/schwarzen Pfeffer und Salz entfernen, sofern keine besondere Variante verlangt ist.
-4. Sonnenblumenoel nicht entfernen, wenn es konkret verlangt wird.
-5. Gewuerze/Saucen nur entfernen, wenn sie in `pantry.json` stehen und zum ersten Kochdatum der Woche noch nicht abgelaufen sind, z. B. Cookidoo `Gewuerzpaste fuer Gemuesebruehe, selbst gemacht` als Vorrat `Vegeta`.
-6. Eintraege mit unbekanntem Ablaufdatum fuer manuelle Pruefung markieren oder auf der Liste lassen.
+1. After adding recipes, open shopping list.
+2. Check ingredients against `data/pantry.json`. Read `cookidoo_name` as UI wording and `name` as actual pantry item.
+3. Remove Wasser, Olivenoel, Oel/Rapsoel, Butter/ungesalzene Butter, Essig/weissen Essig, Pfeffer/schwarzen Pfeffer, Salz, unless special variant required.
+4. Do not remove Sonnenblumenoel when specifically requested.
+5. Remove spices/sauces only when in `pantry.json` and not expired by first cooking date, e.g. Cookidoo `Gewuerzpaste fuer Gemuesebruehe, selbst gemacht` as pantry `Vegeta`.
+6. Unknown expiry: mark manual review or leave on list.
 
-## Wochenplan
+## Week Plan
 
-Rezept in `Meine Woche` eintragen:
+Add recipe to `Meine Woche`:
 
-1. Rezeptseite oeffnen.
-2. Kontextmenue neben dem Merken-Icon oeffnen.
+1. Open recipe page.
+2. Open context menu next to save icon.
 3. `Zu Meine Woche hinzufügen`.
-4. Im Kalender den Tag waehlen.
+4. Pick day in calendar.
 5. `Speichern`.
 
-Direkt pruefen:
+Check directly:
 
 ```text
 https://cookidoo.de/planning/de-DE/my-week?date=YYYY-MM-DD
 ```
 
-Wenn man z. B. `date=2026-05-09` oeffnet, zeigt Cookidoo die Woche um diesen Tag herum. Das ist zuverlaessiger als nur die aktuelle Woche ab `date=today` zu pruefen.
+Opening e.g. `date=2026-05-09` shows week around that day. More reliable than checking current week from `date=today`.
 
-## Notizen
+## Notes
 
-Neue Notiz:
+New note:
 
-1. Rezeptseite oeffnen.
+1. Open recipe page.
 2. `Notiz hinzufügen`.
-3. Textbox `Füge deine Tipps, Tricks oder Variationen hinzu` fuellen.
+3. Fill textbox `Füge deine Tipps, Tricks oder Variationen hinzu`.
 4. `Bestätigen`.
 
-Bewaehrtes Format fuer Portionen:
+Proven portion note:
 
 ```text
 600-800-kcal-Mahlzeit: ca. 0,9-1,2 Cookidoo-Portionen. Cookidoo: 693 kcal, 42 g Eiweiß pro Portion.
 ```
 
-Bewaehrtes Format fuer eine Wochenplanung:
+Proven week note:
 
 ```text
 KW 19-20 (09.-15.05.): Samstag Fisch. 4 Cookidoo-Portionen kochen -> 3 Wochenportionen.
@@ -146,15 +136,13 @@ Salz 2,8 g
 Einfrieren: eher nicht ideal; Fisch zuerst/zeitnah essen.
 ```
 
-Cookidoo-Notizen akzeptieren Zeilenumbrueche und zeigen sie visuell an. Der
-DOM-Snapshot normalisiert den Text aber zu einer Zeile; beim Verifizieren also
-Whitespace normalisieren oder per Screenshot pruefen.
+Cookidoo notes accept line breaks and render them visually. DOM snapshot normalizes text to one line; verify with normalized whitespace or screenshot.
 
-Wichtig: Bei existierenden Notizen ist `Notiz hinzufügen` im DOM nicht immer eindeutig sichtbar. Visuell gibt es dann Papierkorb- und Stift-Icons im Bereich `Meine Notizen`. Da Notizen rezeptweit sind, vor dem Ueberschreiben pruefen, ob eine bestehende Notiz erhalten bleiben soll.
+Existing notes: `Notiz hinzufügen` not always clear in DOM. Visually, trash and pencil icons appear in `Meine Notizen`. Notes are recipe-wide; before overwrite, check whether existing note should remain.
 
-## Rezeptauswahl-Kriterien
+## Recipe Selection Criteria
 
-Bisher gut passende Filter:
+Good filters:
 
 - Sprache: Deutsch
 - Geraet: TM6
@@ -162,24 +150,24 @@ Bisher gut passende Filter:
 - Arbeitszeit: `<= 30 Min`
 - Ziel: ca. 600-800 kcal pro echte Mahlzeit
 - Protein-Ziel: moeglichst mindestens 40 g Eiweiss pro echter Portion
-- 30-39 g Eiweiss pro echter Portion sind akzeptabel, wenn das Rezept sonst gut passt
-- Unter 25 g Eiweiss nur bewusst als Ausnahme, z. B. als saisonales Gericht, und in der Notiz kennzeichnen
+- 30-39 g Eiweiss pro echter Portion acceptable when recipe otherwise fits
+- Unter 25 g Eiweiss only deliberate exception, e.g. seasonal dish, and mark in note
 
-Fuer Wochenkochen Samstag bis Freitag:
+Weekly cooking Saturday through Friday:
 
-- 3 Rezepte fuer Samstag, Sonntag, Montag.
-- Montag bevorzugt das Rezept mit dem geringsten Aufwand: kurze aktive Arbeitszeit, wenig Schnippeln, wenig Abwasch, keine verschachtelten Zusatzschritte.
-- Kategorie nicht fest an Montag binden; nach Auswahl von 1x Fisch, 1x Fleisch und 1x vegetarisch das einfachste Rezept moeglichst auf Montag legen.
-- Pro Rezept ca. 3 echte Wochenportionen einplanen.
-- Wenn Cookidoo standardmaessig 4 Portionen anbietet, ist oft praktikabel: 4 Cookidoo-Portionen kochen und in 3 echte Mahlzeiten teilen.
-- Rechnung: `kcal je Cookidoo-Portion * Cookidoo-Portionen / echte Mahlzeiten`.
-- Mindestens eine Mahlzeit Fisch, eine Fleisch, eine vegetarisch fuer Abwechslung.
-- Fisch zuerst oder zeitnah essen.
+- 3 recipes for Saturday, Sunday, Monday.
+- Monday prefers lowest effort: short active time, little chopping, little cleanup, no nested side steps.
+- Monday category not fixed; after picking 1x fish, 1x meat, 1x vegetarian, place easiest recipe on Monday when possible.
+- Plan about 3 real weekly portions per recipe.
+- If Cookidoo defaults to 4 portions, often practical: cook 4 Cookidoo portions, split into 3 real meals.
+- Calculation: `kcal je Cookidoo-Portion * Cookidoo-Portionen / echte Mahlzeiten`.
+- At least one fish, one meat, one vegetarian meal for variety.
+- Fish first or soon.
 
-## Bekannte Stolperstellen
+## Known Pitfalls
 
-- Die Suchergebnisse und Rezeptlisten sind teils lazy-loaded. Wenn ein Rezept nicht im DOM auffindbar ist, Liste scrollen oder die Seite neu laden.
-- `Meine Woche` mit dem aktuellen Datum zeigt nicht immer alle spaeteren Eintraege. Fuer Kontrolle gezielt mit `?date=YYYY-MM-DD` auf die Kochwoche gehen.
-- Einkaufsliste hat zwei Ansichten: `Nach Kategorie` und `Nach Rezepten`. Fuer Inhaltskontrolle ist `Nach Rezepten N` der schnellste Plausibilitaetscheck.
-- Bei Rezepten mit Sauce oder separaten Beilagen in der Notiz erwaehnen, ob Beilage separat einberechnet werden muss.
-- Cookidoo-Naehwerte nicht blind uebernehmen. Wenn Zutaten/Mengen vorhanden sind, lokale Rechnung aus `bin/nutrition.py` als primaeren Wert verwenden; Cookidoo nur zum Vergleich nennen. Bei Abweichungen Produktmatch und Portionierung in der Notiz erklaeren.
+- Search results and recipe lists partly lazy-loaded. If recipe not in DOM, scroll list or reload page.
+- `Meine Woche` with current date does not always show all later entries. For verification, open cooking week with `?date=YYYY-MM-DD`.
+- Shopping list has `Nach Kategorie` and `Nach Rezepten`. For content check, `Nach Rezepten N` is fastest sanity check.
+- For recipes with sauce or separate sides, mention in note whether side must be calculated separately.
+- Do not copy Cookidoo nutrition blindly. If ingredients/amounts exist, use local calculation from `bin/nutrition.py` as primary; mention Cookidoo only as comparison. Explain product match and portions when values differ.

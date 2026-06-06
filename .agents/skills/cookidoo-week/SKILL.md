@@ -5,7 +5,7 @@ description: Plan and execute the user's recurring Cookidoo meal-prep week. Use 
 
 # Cookidoo Week
 
-## Token efficiency
+## Token Efficiency
 
 Respond like smart caveman. Cut all filler, keep technical substance.
 - Drop articles (a, an, the), filler (just, really, basically, actually).
@@ -14,41 +14,40 @@ Respond like smart caveman. Cut all filler, keep technical substance.
 - Technical terms stay exact. Code blocks unchanged.
 - Pattern: [thing] [action] [reason]. [next step].
 
-## Overview
+## Scope
 
-Execute the recurring Cookidoo workflow end to end: select three new recipes, calculate realistic meal portions and nutrition labels, write Cookidoo notes, create a custom list, clear/rebuild the shopping list, apply pantry cleanup, and add the meals to the Cookidoo week plan.
+Run recurring Cookidoo workflow end to end: pick three new recipes, calculate realistic portions and nutrition labels, write Cookidoo notes, create custom list, clear/rebuild shopping list, apply pantry cleanup, add meals to week plan.
 
-Resolve the Cookidoo project root by going three directories up from this `SKILL.md` file. Use that project root for `docs/`, `data/`, `bin/`, `recipes/`, and `reports/`.
+Project root: three dirs up from this `SKILL.md`. Use that root for `docs/`, `data/`, `bin/`, `recipes/`, `reports/`.
 
-## Before Browser Work
+## Browser
 
-Use the in-app browser for Cookidoo. If browser automation is needed, use the Browser Use plugin/tooling and follow its skill instructions before the first browser API action. Assume the user is logged in only when the current browser session confirms it; otherwise ask the user to log in and continue after they say it is done.
-
-Do not use generic internet search as a substitute for the user's logged-in Cookidoo account when recipe details, ratings, shopping-list actions, notes, or week-plan changes are needed.
-
-For repeated Cookidoo UI actions, load `references/browser-helpers.md` and copy
-only the smallest relevant snippet into the browser context.
+- Use in-app browser for Cookidoo.
+- If browser automation needed, use Browser Use plugin/tooling; read its skill before first browser API action.
+- Treat user logged in only after current browser session proves it. Otherwise ask user to log in; continue after confirmation.
+- Do not use generic internet search instead of logged-in Cookidoo for recipe details, ratings, shopping-list actions, notes, or week-plan changes.
+- For repeated Cookidoo UI actions, load `references/browser-helpers.md`; copy only smallest relevant snippet into browser context.
 
 ## Context Discipline
 
-- Do not run broad `rg` searches over `data/products_harmonized.json`; use focused `bin/nutrition.py search "<ingredient>" --source ...` queries instead.
-- Keep browser observations compact. Prefer targeted checks such as list count, saved-note substring, recipe/date presence, and pantry-staple absence over dumping full page text or large DOM snapshots.
-- If a browser UI state is unclear, inspect only the smallest relevant DOM/snapshot excerpt needed for the next action.
-- Read large local references, including this skill's Browser instructions, once per turn unless they changed. Reuse the remembered workflow instead of reopening the same long files.
-- After running `bin/nutrition.py week-brief`, keep later checks targeted to the relevant section or substring. Do not repeat the full brief output unless it is needed for the final answer or an audit artifact.
-- For repetitive Cookidoo browser actions, prefer small reusable page helpers and targeted JavaScript checks over repeated full snapshots.
+- Do not broad-search `data/products_harmonized.json`; use focused `bin/nutrition.py search "<ingredient>" --source ...`.
+- Keep browser observations compact: list count, saved-note substring, recipe/date presence, pantry-staple absence.
+- If UI state unclear, inspect smallest relevant DOM/snapshot excerpt.
+- Read large local references, including Browser instructions, once per turn unless changed.
+- After `bin/nutrition.py week-brief`, keep later checks targeted to relevant section/substrings. Do not repeat full brief unless final answer or audit needs it.
+- For repetitive Cookidoo actions, prefer small reusable page helpers and targeted JavaScript checks over repeated full snapshots.
 
 ## Week Rule
 
-The user's meal-prep week runs Saturday through Friday. They cook on Saturday, Sunday, and Monday. Each of the three recipes should yield three real meal-prep portions, for nine total meals:
+Meal-prep week: Saturday through Friday. Cook Saturday, Sunday, Monday. Three recipes should yield three real meal-prep portions each, nine meals total:
 
-- the user gets seven meals
-- the user's father eats one and takes one
-- the recipes should be planned as Saturday, Sunday, and Monday entries
-- Monday should usually get the lowest-effort recipe of the three because work/sports make the evening tighter. Prefer short active time, little chopping, little cleanup, and few nested side steps for Monday.
-- Do not force a fixed category onto Monday. Select one fish, one meat, and one vegetarian recipe, then assign the easiest/lowest-effort one to Monday when possible.
+- user gets seven meals
+- user's father eats one and takes one
+- recipes planned as Saturday, Sunday, Monday entries
+- Monday usually gets lowest-effort recipe: short active time, little chopping, little cleanup, few nested side steps
+- Monday category not fixed; select one fish, one meat, one vegetarian, then place easiest recipe on Monday when possible
 
-When invoked without a target week, choose the next Saturday after the current date as the start date and state the exact Saturday-Friday date range. Use absolute dates in user-facing text.
+No target week: choose next Saturday after current date. State exact Saturday-Friday date range.
 
 ## Recipe Selection
 
@@ -58,54 +57,54 @@ Pick exactly three Cookidoo recipes:
 2. one meat dish
 3. one vegetarian dish
 
-Selection criteria:
+Criteria:
 
-- Cookidoo difficulty should be `einfach`.
-- Keep prep low; prefer `Arbeitszeit` around 30 minutes or less unless the recipe is otherwise clearly easy.
-- For the Monday recipe, prefer even lower effort: ideally `Arbeitszeit` around 20-25 minutes or less, few ingredients, little chopping, and low cleanup.
-- Prefer satisfying, normal meals in the rough 600-800 kcal range per real meal-prep portion; slightly above is acceptable when the dish is otherwise a good fit.
-- Protein target: prefer at least 40 g protein per real meal-prep portion.
-- Accept 30-39 g protein per real portion when the recipe otherwise fits well.
-- Treat below 25 g protein as a deliberate exception only, e.g. a seasonal dish, and explicitly mark it in the Cookidoo note and final response.
-- Keep the meals protein-forward, but do not optimize for "protein bomb" or fitness recipes.
-- Avoid relatively poor ratings. Prefer about 4.3 stars or higher with a plausible number of ratings; reject low-rated recipes unless there is a clear reason and tell the user.
-- Avoid repeating any recipe already used this year. Check `docs/meal-plan-history-2026.md`, existing artifacts in `recipes/` and `reports/`, and any relevant Cookidoo lists/history visible in the browser. Compare both title and recipe ID.
-- Add light seasonality when it naturally fits. Do not force every recipe to be seasonal, but in season include relevant dishes occasionally, e.g. asparagus in asparagus season.
-- Choose recipes where one of Cookidoo's listed/clickable portion counts fits the target real portions and calorie range. Do not use a custom unlisted portion count via `Portionsgröße anpassen`/`Meine Kreationen`; Cookidoo does not provide the same success guarantee for those adaptations and this workflow should avoid them. If the final three real portions correspond to four listed Cookidoo portions, use four Cookidoo portions and note that four Cookidoo portions become three real meal-prep portions.
+- Difficulty should be `einfach`.
+- Prep low; prefer `Arbeitszeit` around 30 minutes or less unless clearly easy.
+- Monday: prefer `Arbeitszeit` around 20-25 minutes or less, few ingredients, little chopping, low cleanup.
+- Target normal satisfying meals around 600-800 kcal per real meal-prep portion; slightly above acceptable if dish fits.
+- Protein: prefer at least 40 g per real portion.
+- 30-39 g protein acceptable when recipe otherwise fits.
+- Below 25 g protein only deliberate exception, e.g. seasonal dish; mark in Cookidoo note and final response.
+- Protein-forward, not fitness/protein-bomb optimized.
+- Avoid poor ratings. Prefer about 4.3+ stars with plausible rating count; reject low-rated recipes unless strong reason and tell user.
+- Avoid any recipe already used this year. Check `docs/meal-plan-history-2026.md`, artifacts in `recipes/` and `reports/`, and relevant Cookidoo lists/history visible in browser. Compare title and recipe ID.
+- Use light seasonality when natural; do not force.
+- Use one listed/clickable Cookidoo portion count that fits target real portions and calorie range.
+- Do not use custom unlisted portion count via `Portionsgröße anpassen`/`Meine Kreationen`.
+- If three real portions map to four listed Cookidoo portions, use four Cookidoo portions and note four Cookidoo portions become three real meal-prep portions.
 
-## Nutrition Calculation
+## Nutrition
 
-Read `docs/nutrition-workflow.md` and use `bin/nutrition.py` for estimates.
+Read `docs/nutrition-workflow.md`. Use `bin/nutrition.py`.
 
-Do not blindly copy Cookidoo nutrition values when the visible ingredients can be calculated locally. Cookidoo values are comparison data only. The primary note should come from the local ingredient calculation.
+Cookidoo nutrition values: comparison only when visible ingredients can be calculated locally. Primary note uses local ingredient calculation.
 
-Matching policy:
+Matching:
 
-- Prefer BLS for generic raw/common ingredients such as vegetables, raw meat/fish, rice, potatoes, butter, cream, and cheese.
-- Use REWE/Edeka/dm/product entries for product-like ingredients such as wraps, canned goods, passata, branded sauces, or Cookidoo-specific product wording.
-- Keep every matched `source` and `id` in the recipe JSON so the estimate stays auditable.
+- BLS for generic raw/common ingredients: vegetables, raw meat/fish, rice, potatoes, butter, cream, cheese.
+- REWE/Edeka/dm/product entries for product-like ingredients: wraps, canned goods, passata, branded sauces, Cookidoo-specific wording.
+- Keep every matched `source` and `id` in recipe JSON.
 - Use `data/ingredient-defaults.json` for known ambiguous ingredients.
-- For Cookidoo vegetable broth paste/cubes without a specific product, use `rewe:2082415` (`Podravka Vegeta Oryginalna 500g`) and assume `1 geh. TL` is about `10 g` unless the recipe gives a weight.
-- Model explicit salt separately. Treat salt, broth paste, stock cubes, canned products, and "to taste" additions as the weakest part of the estimate.
-- Pick realistic products the user would likely buy. Do not force ingredient matches to reproduce Cookidoo totals.
+- Cookidoo vegetable broth paste/cubes without specific product: use `rewe:2082415` (`Podravka Vegeta Oryginalna 500g`); assume `1 geh. TL` about `10 g` unless weight given.
+- Model explicit salt separately. Salt, broth paste, stock cubes, canned products, "to taste" additions are weakest estimate.
+- Pick realistic products user would likely buy. Do not force matches to reproduce Cookidoo totals.
 
-For each selected recipe:
+For each recipe:
 
-1. create or update a recipe artifact under `recipes/`
+1. create/update recipe artifact under `recipes/`
 2. calculate nutrition with `bin/nutrition.py calc`
-3. write/update a report under `reports/`
-4. decide the Cookidoo portion count and real meal-prep portion count
-5. note important assumptions and any large Cookidoo-vs-local discrepancy
+3. write/update report under `reports/`
+4. decide Cookidoo portion count and real meal-prep portion count
+5. note important assumptions and large Cookidoo-vs-local discrepancy
 
-After the recipe JSON is ready, run `bin/nutrition.py week-brief recipes/<file>.json --date YYYY-MM-DD` for a compact summary, Cookidoo note text, pantry precheck, and final verification checklist.
+After recipe JSON ready, run `bin/nutrition.py week-brief recipes/<file>.json --date YYYY-MM-DD` for compact summary, Cookidoo note text, pantry precheck, final checklist.
 
-For pantry-only zero-gram ingredients, use `pantry_names` in the recipe JSON when
-the automatic split would be ambiguous. The helper already avoids splitting
-descriptive suffixes such as `Lorbeerblatt, getrocknet`.
+For pantry-only zero-gram ingredients, use `pantry_names` in recipe JSON when automatic split would be ambiguous. Helper already avoids splitting descriptive suffixes such as `Lorbeerblatt, getrocknet`.
 
 ## Note Format
 
-Use German note text with blank lines and German nutrition-label wording. Put full match tables in the report, not in Cookidoo notes.
+Use German note text with blank lines and German nutrition-label wording. Put full match tables in report, not Cookidoo notes.
 
 Template:
 
@@ -125,24 +124,24 @@ Salz 2,8 g
 Einfrieren: eher nicht ideal; zuerst/zeitnah essen.
 ```
 
-Adjust the first line for Saturday/Sunday/Monday, fish/meat/vegetarian, exact dates, Cookidoo portion count, and the real meal-prep portion count. Always include a short freezing/storage judgment.
+Adjust first line for Saturday/Sunday/Monday, fish/meat/vegetarian, exact dates, Cookidoo portion count, real meal-prep portion count. Always include short freezing/storage judgment.
 
 ## Pantry And Shopping List
 
-Read `data/pantry.json` and `docs/nutrition-workflow.md` before cleaning the shopping list.
+Read `data/pantry.json` and `docs/nutrition-workflow.md` before shopping-list cleanup.
 
-Always available unless the current pantry file says otherwise:
+Always available unless pantry says otherwise:
 
 - Wasser
 - Olivenöl
-- Öl when Cookidoo's wording can reasonably be satisfied with pantry Rapsöl
-- Butter when Cookidoo's wording can reasonably be satisfied with ungesalzene Butter
-- Essig when Cookidoo's wording can reasonably be satisfied with weißer Essig
-- Pfeffer when Cookidoo's wording can reasonably be satisfied with schwarzer Pfeffer
+- Öl when Cookidoo wording can be satisfied with pantry Rapsöl
+- Butter when Cookidoo wording can be satisfied with ungesalzene Butter
+- Essig when Cookidoo wording can be satisfied with weißer Essig
+- Pfeffer when Cookidoo wording can be satisfied with schwarzer Pfeffer
 - Salz
-- dated spices/sauces that are present and not expired by the first cooking date
+- dated spices/sauces present and not expired by first cooking date
 
-Do not remove Sonnenblumenöl or other non-standard oils unless `pantry.json` explicitly covers them. Do not remove specialty vinegar such as Reisessig unless pantry handling says it is available and suitable. If a pantry item's expiry is unknown, keep it on the list or flag it for manual review instead of removing it silently.
+Do not remove Sonnenblumenöl or other non-standard oils unless `pantry.json` explicitly covers them. Do not remove specialty vinegar such as Reisessig unless pantry says available and suitable. Unknown expiry: keep on list or flag manual review.
 
 Use `bin/nutrition.py pantry-check "<Cookidoo ingredient>" --date YYYY-MM-DD` for individual shopping-list decisions.
 
@@ -150,29 +149,29 @@ Use `bin/nutrition.py pantry-check "<Cookidoo ingredient>" --date YYYY-MM-DD` fo
 
 Read `docs/cookidoo-ui-reference.md` before manipulating Cookidoo.
 
-Then execute:
+Steps:
 
-1. Clear the current Cookidoo shopping list before adding any new recipes, so stale checked items from a previous week cannot remain.
-2. Create a Cookidoo custom list for the target week, e.g. `KW 20 (09.-15.05.)`.
-3. Add exactly the three selected recipes to that list.
-4. For each recipe, use only a listed/clickable Cookidoo portion count. Do not create custom unlisted portion adaptations.
-5. Add the note text to each recipe.
-6. Add the three recipes to the shopping list.
-7. Remove/check off pantry-covered ingredients using the pantry rules.
-8. Add the recipes to the Cookidoo week plan on Saturday, Sunday, and Monday.
-9. Verify the custom list has exactly three recipes, the week plan has the three correct dates, notes are saved, and the shopping list no longer contains pantry staples.
+1. Clear current Cookidoo shopping list before adding recipes, so stale checked items cannot remain.
+2. Create Cookidoo custom list for target week, e.g. `KW 20 (09.-15.05.)`.
+3. Add exactly three selected recipes to list.
+4. For each recipe, use only listed/clickable Cookidoo portion count. Do not create custom unlisted portion adaptations.
+5. Add note text to each recipe.
+6. Add three recipes to shopping list.
+7. Remove/check off pantry-covered ingredients using pantry rules.
+8. Add recipes to Cookidoo week plan on Saturday, Sunday, Monday.
+9. Verify custom list has exactly three recipes, week plan has three correct dates, notes are saved, shopping list lacks pantry staples.
 
-If Cookidoo UI behavior differs from the docs, work with the current UI and update `docs/cookidoo-ui-reference.md` with the new learning.
+If Cookidoo UI behavior differs from docs, adapt to current UI and update `docs/cookidoo-ui-reference.md`.
 
 ## Final Response
 
-Report the final three recipes with:
+Report:
 
 - date/day/category
 - Cookidoo portion count and real meal-prep portion count
 - estimated kcal and protein per real portion
 - freezing/storage note
-- any rejected or caveat-worthy item, especially rating or nutrition discrepancies
-- confirmation that list, notes, week plan, shopping list, and pantry cleanup were completed
+- rejected or caveat-worthy items, especially rating/nutrition discrepancies
+- confirmation: list, notes, week plan, shopping list, pantry cleanup completed
 
-If any live Cookidoo step could not be completed, state exactly which step is still pending and why.
+If live Cookidoo step failed, state exact pending step and reason.
