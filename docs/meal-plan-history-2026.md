@@ -115,3 +115,18 @@ Purpose: track Cookidoo week plans and single dishes; prevent same-year repeats.
   - Cookidoo: 4 Portionen, 3 echte Mahlzeiten, ca. 858 kcal, 37,7 g Eiweiss je Mahlzeit.
   - Hinweis: Montagsgericht mit niedriger aktiver Arbeitszeit; Salz wegen Bruehe und Kapern grob.
   - Einfrieren: moeglich; Klopse und Sauce gut, Kartoffeln werden beim Einfrieren weicher, Kuehlschrank-Mealprep besser.
+
+## KW 26, 2026-06-20 bis 2026-06-26
+
+- Fisch: Gnocchi mit Kraeutergarnelen — https://cookidoo.de/recipes/recipe/de-DE/r236675
+  - Cookidoo: 4 Portionen, 3 echte Mahlzeiten, ca. 742 kcal, 36,7 g Eiweiss je Mahlzeit.
+  - Hinweis: sehr kurze aktive Zeit und belastbares Rating; lokaler Salzschätzwert durch Gnocchi relativ hoch.
+  - Einfrieren: moeglich; Garnelen und Gnocchi werden beim Aufwaermen weicher, im Kuehlschrank zuerst essen.
+- Vegetarisch: Linsendal — https://cookidoo.de/recipes/recipe/de-DE/r753080
+  - Cookidoo: 4 Portionen, 3 echte Mahlzeiten, ca. 639 kcal, 29,3 g Eiweiss je Mahlzeit.
+  - Hinweis: lokal knapp unter 30 g Protein, Cookidoo skaliert auf 30,8 g; Currypaste und Kokosmilch produktabhaengig.
+  - Einfrieren: gut geeignet; portionsweise einfrieren oder mehrere Tage im Kuehlschrank lagern.
+- Fleisch: Ajvar-Couscous mit Haehnchen — https://cookidoo.de/recipes/recipe/de-DE/r778806
+  - Cookidoo: 4 Portionen, 3 echte Mahlzeiten, ca. 631 kcal, 48,0 g Eiweiss je Mahlzeit.
+  - Hinweis: niedrigster Arbeits- und Reinigungsaufwand der Woche, daher Montag; Rating liegt genau bei 4,3.
+  - Einfrieren: gut geeignet; Couscous wird etwas weicher, im Kuehlschrank ebenfalls stabil.

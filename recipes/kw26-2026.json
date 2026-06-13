@@ -1,0 +1,345 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "week": "KW 26, 2026-06-20 bis 2026-06-26",
+  "recipes": [
+    {
+      "id": "r236675",
+      "title": "Gnocchi mit Kräutergarnelen",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r236675",
+      "week_label": "KW 26 (20.-26.06.)",
+      "category": "Samstag Fisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.5,
+      "rating_count": "6.1K",
+      "difficulty": "einfach",
+      "work_time": "10 Min",
+      "total_time": "30 Min",
+      "estimate_context": "BLS/REWE, Whisky optional, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 587,
+        "protein": 30,
+        "fat": 21,
+        "fiber": 4.8,
+        "carbs": 69
+      },
+      "freezer_note": "möglich; Garnelen und Gnocchi werden beim Aufwärmen weicher, im Kühlschrank zuerst essen",
+      "note": "Sehr kurze aktive Zeit und sehr belastbares Rating; 4 Cookidoo-Portionen ergeben drei sättigende Wochenportionen.",
+      "ingredients": [
+        {
+          "name": "Knoblauchzehe",
+          "grams": 5,
+          "source": "bls",
+          "id": "G490100"
+        },
+        {
+          "name": "Rosmarin, frisch",
+          "grams": 0,
+          "note": "3 Zweige; kleine Menge, für Einkaufsliste relevant"
+        },
+        {
+          "name": "Thymian, frisch",
+          "grams": 0,
+          "note": "3 Zweige; kleine Menge, für Einkaufsliste relevant"
+        },
+        {
+          "name": "Oregano, frisch",
+          "grams": 0,
+          "note": "5 Stängel; kleine Menge, für Einkaufsliste relevant"
+        },
+        {
+          "name": "Sahne",
+          "grams": 100,
+          "source": "bls",
+          "id": "M173800",
+          "note": "Schlagsahne 30 % Fett"
+        },
+        {
+          "name": "Crème fraîche",
+          "grams": 100,
+          "source": "bls",
+          "id": "M176800",
+          "note": "30 % Fett"
+        },
+        {
+          "name": "Whisky",
+          "grams": 10,
+          "source": "bls",
+          "id": "P733000",
+          "note": "Cookidoo optional; in Schätzung enthalten"
+        },
+        {
+          "name": "Tomatenmark",
+          "grams": 30,
+          "source": "rewe",
+          "id": "7129194"
+        },
+        {
+          "name": "Salz",
+          "grams": 2.5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1/2 TL grob als 2,5 g modelliert"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1/2 TL, Menge klein/ignoriert"
+        },
+        {
+          "name": "Garnelen, roh, geschält",
+          "grams": 400,
+          "source": "bls",
+          "id": "T753100"
+        },
+        {
+          "name": "Wasser",
+          "grams": 500,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gnocchi aus dem Kühlregal",
+          "grams": 800,
+          "source": "rewe",
+          "id": "941231"
+        },
+        {
+          "name": "Cherry-Tomaten",
+          "grams": 150,
+          "source": "bls",
+          "id": "G561100"
+        },
+        {
+          "name": "Frühlingszwiebeln",
+          "grams": 90,
+          "source": "bls",
+          "id": "G482100",
+          "note": "3 Stück grob als 90 g modelliert"
+        }
+      ]
+    },
+    {
+      "id": "r753080",
+      "title": "Linsendal",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r753080",
+      "week_label": "KW 26 (20.-26.06.)",
+      "category": "Sonntag Vegetarisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.5,
+      "rating_count": "223",
+      "difficulty": "einfach",
+      "work_time": "15 Min",
+      "total_time": "35 Min",
+      "estimate_context": "BLS/REWE, volle Kokosmilch, Currypaste und Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 485,
+        "protein": 23.1,
+        "fat": 18,
+        "carbs": 51
+      },
+      "freezer_note": "gut geeignet; portionsweise einfrieren oder mehrere Tage im Kühlschrank lagern",
+      "note": "Einfaches Ein-Topf-Gericht; lokal knapp unter 30 g Protein, Cookidoo skaliert auf 30,8 g je Wochenportion.",
+      "ingredients": [
+        {
+          "name": "Bundzwiebeln",
+          "grams": 150,
+          "source": "bls",
+          "id": "G482100",
+          "note": "Cookidoo nennt 3 Stück mit Grün, ca. 150 g"
+        },
+        {
+          "name": "Knoblauchzehen",
+          "grams": 10,
+          "source": "bls",
+          "id": "G490100",
+          "note": "2 Stück grob als 10 g modelliert"
+        },
+        {
+          "name": "Roter Peperoncino",
+          "grams": 15,
+          "source": "bls",
+          "id": "G543100",
+          "note": "als rote Paprika modelliert; kleine Nährwertwirkung"
+        },
+        {
+          "name": "Karotten",
+          "grams": 250,
+          "source": "bls",
+          "id": "G620100"
+        },
+        {
+          "name": "Sesamöl, geröstet",
+          "grams": 20,
+          "source": "rewe",
+          "id": "4646703"
+        },
+        {
+          "name": "Rote Linsen, getrocknet",
+          "grams": 300,
+          "source": "bls",
+          "id": "H730000"
+        },
+        {
+          "name": "Gelbe Currypaste",
+          "grams": 50,
+          "source": "rewe",
+          "id": "7734997",
+          "note": "Salz und Schärfe produktabhängig"
+        },
+        {
+          "name": "Wasser",
+          "grams": 500,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Kokosmilch",
+          "grams": 300,
+          "source": "rewe",
+          "id": "792132",
+          "note": "volle Kokosmilch, 18 % Fett"
+        },
+        {
+          "name": "Salz",
+          "grams": 2.5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1/2 TL grob als 2,5 g modelliert"
+        }
+      ]
+    },
+    {
+      "id": "r778806",
+      "title": "Ajvar-Couscous mit Hähnchen",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r778806",
+      "week_label": "KW 26 (20.-26.06.)",
+      "category": "Montag Fleisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.3,
+      "rating_count": "1.7K",
+      "difficulty": "einfach",
+      "work_time": "10 Min",
+      "total_time": "30 Min",
+      "estimate_context": "BLS/REWE, Ajvar und Gemüsebrühe produktabhängig, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 497,
+        "protein": 33,
+        "fat": 10,
+        "fiber": 7.5,
+        "sat_fat": 1,
+        "carbs": 68
+      },
+      "freezer_note": "gut geeignet; Couscous wird etwas weicher, im Kühlschrank ebenfalls stabil",
+      "note": "Niedrigster Arbeits- und Reinigungsaufwand der Woche, daher Montag; Rating liegt genau am Zielwert 4,3.",
+      "ingredients": [
+        {
+          "name": "Couscous",
+          "grams": 270,
+          "source": "rewe",
+          "id": "294337"
+        },
+        {
+          "name": "Zwiebel",
+          "grams": 60,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Knoblauchzehe",
+          "grams": 5,
+          "source": "bls",
+          "id": "G490100"
+        },
+        {
+          "name": "Öl",
+          "grams": 15,
+          "source": "bls",
+          "id": "Q180000",
+          "note": "Cookidoo generisch 'Öl', als Rapsöl modelliert"
+        },
+        {
+          "name": "Hähnchenbrustfilets",
+          "grams": 400,
+          "source": "rewe",
+          "id": "8342820"
+        },
+        {
+          "name": "Wasser",
+          "grams": 500,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Ajvar, mild",
+          "grams": 200,
+          "source": "rewe",
+          "id": "710560",
+          "note": "REWE Beste Wahl Ajvar mild; Salz produktabhängig"
+        },
+        {
+          "name": "Zitronensaft",
+          "grams": 10,
+          "source": "bls",
+          "id": "F601600"
+        },
+        {
+          "name": "Salz",
+          "grams": 10,
+          "source": "bls",
+          "id": "R111000",
+          "note": "2 TL grob als 10 g modelliert; tatsächliche Aufnahme kann niedriger sein"
+        },
+        {
+          "name": "Oregano",
+          "grams": 1.5,
+          "source": "rewe",
+          "id": "4248490",
+          "pantry_names": [
+            "Oregano"
+          ],
+          "note": "1 1/2 TL grob als 1,5 g modelliert"
+        },
+        {
+          "name": "Zucker",
+          "grams": 2,
+          "manual_nutrients_per_100g": {
+            "kcal": 400,
+            "protein": 0,
+            "carbs": 100,
+            "sugar": 100,
+            "fat": 0,
+            "saturated_fat": 0,
+            "fiber": 0,
+            "salt": 0
+          },
+          "note": "1/2 TL grob als 2 g modelliert"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1/2 TL, Menge klein/ignoriert"
+        },
+        {
+          "name": "Gewürzpaste für Gemüsebrühe, selbst gemacht",
+          "grams": 10,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "Cookidoo 1 geh. TL; Vegeta-Default, Salzaufnahme grob"
+        },
+        {
+          "name": "Erbsen, TK",
+          "grams": 150,
+          "source": "bls",
+          "id": "G760100",
+          "note": "als grüne Erbsen roh modelliert"
+        },
+        {
+          "name": "Prinzessbohnen, TK",
+          "grams": 150,
+          "source": "bls",
+          "id": "G710200"
+        }
+      ]
+    }
+  ]
+}
