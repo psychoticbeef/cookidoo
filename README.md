@@ -8,6 +8,10 @@ Die Grundidee: Ich koche Samstag, Sonntag und Montag je ein Gericht. Jedes
 Gericht soll drei echte Mealprep-Portionen ergeben. Damit entstehen neun
 Portionen für Samstag bis Freitag.
 
+## Showcase
+
+[60-Sekunden-Showcase auf GitHub ansehen](https://github.com/psychoticbeef/cookidoo/raw/refs/heads/main/showcase.mp4)
+
 ## Nächste Woche planen
 
 Dieses Repo enthält einen lokalen Codex-Skill:
