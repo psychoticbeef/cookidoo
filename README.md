@@ -10,7 +10,9 @@ Portionen für Samstag bis Freitag.
 
 ## Showcase
 
-[60-Sekunden-Showcase auf GitHub ansehen](https://github.com/psychoticbeef/cookidoo/raw/refs/heads/main/showcase.mp4)
+[![60-Sekunden-Showcase des Cookidoo-Workflows](showcase.jpg)](https://cdn.jsdelivr.net/gh/psychoticbeef/cookidoo@main/showcase.mp4)
+
+[Video direkt abspielen](https://cdn.jsdelivr.net/gh/psychoticbeef/cookidoo@main/showcase.mp4)
 
 ## Nächste Woche planen
 
