@@ -145,6 +145,14 @@ Do not remove Sonnenblumenöl or other non-standard oils unless `pantry.json` ex
 
 Use `bin/nutrition.py pantry-check "<Cookidoo ingredient>" --date YYYY-MM-DD` for individual shopping-list decisions.
 
+## Paprika Export
+
+When adding each recipe to `Meine Woche`, also run:
+
+`python3 cookidoo_text_to_paprika.py --url "$current_url" --text page.txt --html page.html --out "$recipe_title.paprikarecipes"`
+
+`page.txt` = rendered select-all copy; `page.html` = current `document.documentElement.outerHTML`; `--url` = final variant URL.
+
 ## Cookidoo UI Workflow
 
 Read `docs/cookidoo-ui-reference.md` before manipulating Cookidoo.
@@ -158,8 +166,8 @@ Steps:
 5. Add note text to each recipe.
 6. Add three recipes to shopping list.
 7. Remove/check off pantry-covered ingredients using pantry rules.
-8. Add recipes to Cookidoo week plan on Saturday, Sunday, Monday.
-9. Verify custom list has exactly three recipes, week plan has three correct dates, notes are saved, shopping list lacks pantry staples.
+8. Add recipes to Cookidoo week plan on Saturday, Sunday, Monday; for each item added, run Paprika export from current finalized recipe page.
+9. Verify custom list has exactly three recipes, week plan has three correct dates, notes are saved, Paprika files exist, shopping list lacks pantry staples.
 
 If Cookidoo UI behavior differs from docs, adapt to current UI and update `docs/cookidoo-ui-reference.md`.
 
@@ -172,6 +180,6 @@ Report:
 - estimated kcal and protein per real portion
 - freezing/storage note
 - rejected or caveat-worthy items, especially rating/nutrition discrepancies
-- confirmation: list, notes, week plan, shopping list, pantry cleanup completed
+- confirmation: list, notes, Paprika exports, week plan, shopping list, pantry cleanup completed
 
 If live Cookidoo step failed, state exact pending step and reason.
