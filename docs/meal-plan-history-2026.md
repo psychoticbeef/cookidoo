@@ -130,3 +130,18 @@ Purpose: track Cookidoo week plans and single dishes; prevent same-year repeats.
   - Cookidoo: 4 Portionen, 3 echte Mahlzeiten, ca. 631 kcal, 48,0 g Eiweiss je Mahlzeit.
   - Hinweis: niedrigster Arbeits- und Reinigungsaufwand der Woche, daher Montag; Rating liegt genau bei 4,3.
   - Einfrieren: gut geeignet; Couscous wird etwas weicher, im Kuehlschrank ebenfalls stabil.
+
+## KW 30, 2026-07-18 bis 2026-07-24
+
+- Fisch: Garnelen Curry — https://cookidoo.de/recipes/recipe/de-DE/r304156
+  - Cookidoo: 4 Portionen, 3 echte Mahlzeiten, ca. 855 kcal, 42,6 g Eiweiss je Mahlzeit.
+  - Hinweis: lokal knapp ueber Zielbereich durch Kokosmilch und 4->3-Portionierung; Proteinziel erreicht.
+  - Einfrieren: moeglich; Garnelen und Reis werden beim Aufwaermen etwas weicher, im Kuehlschrank zuerst/zeitnah essen.
+- Fleisch: Haehnchen in cremiger Pesto-Sauce mit Erbsen-Reis — https://cookidoo.de/recipes/recipe/de-DE/r706693
+  - Cookidoo: 4 Portionen, 3 echte Mahlzeiten, ca. 745 kcal, 64,0 g Eiweiss je Mahlzeit.
+  - Hinweis: hohe Proteinmenge bei niedrigem aktivem Aufwand; lokale Kalorien liegen unter Cookidoo durch konkrete Produktmatches.
+  - Einfrieren: gut geeignet; Sauce und Reis portionsweise einfrierbar, Reis wird etwas weicher.
+- Vegetarisch: Vegetarische Linguine Carbonara — https://cookidoo.de/recipes/recipe/de-DE/r107828
+  - Cookidoo: 4 Portionen, 3 echte Mahlzeiten, ca. 863 kcal, 35,5 g Eiweiss je Mahlzeit.
+  - Hinweis: Montag wegen niedrigstem aktivem Aufwand; lokal knapp ueber Zielbereich, vegetarisches Protein akzeptabel.
+  - Einfrieren: eher nicht ideal; Pasta und Joghurt-Eigelb-Sauce im Kuehlschrank zeitnah essen, vorsichtig aufwaermen.

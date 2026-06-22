@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import json
 import os
 import re
 import subprocess
@@ -116,6 +117,44 @@ def sanitize(text: str) -> str:
     cleaned = "".join(kept)
     lines = [re.sub(r"[ \t]+", " ", ln).strip() for ln in cleaned.split("\n")]
     return "\n".join(lines).strip()
+
+
+# Cookidoo difficulty labels -> Paprika's German scale.
+_DIFFICULTY_MAP = {"einfach": "Leicht", "medium": "Mittel"}
+
+
+def map_difficulty(value: str) -> str:
+    """Normalize a Cookidoo difficulty (e.g. 'einfach', 'medium')."""
+    return _DIFFICULTY_MAP.get(value.strip().lower(), value)
+
+
+def digits_only(value: str) -> str:
+    """Keep just the number, e.g. '4 Portionen' -> '4'."""
+    m = re.search(r"\d+", value or "")
+    return m.group(0) if m else ""
+
+
+def to_minutes(value: str) -> str:
+    """Total minutes as an integer string: '4 Std.' -> '240',
+    '1 Std. 35 Min' -> '95', '30 Min' -> '30'. '' if no number."""
+    if not value:
+        return ""
+    h = re.search(r"(\d+)\s*(?:Std|Stunden?)\b", value, re.IGNORECASE)
+    m = re.search(r"(\d+)\s*(?:Min|Minuten?)\b", value, re.IGNORECASE)
+    if h or m:
+        return str((int(h.group(1)) if h else 0) * 60 + (int(m.group(1)) if m else 0))
+    n = re.search(r"\d+", value)   # no unit -> assume minutes
+    return n.group(0) if n else ""
+
+
+def servings_from_yield(value: str) -> str:
+    """Servings from a yield: a bare number for portion counts
+    ('4 Portionen' -> '4', '16 Stücke' -> '16'), but the verbatim text for
+    weight/volume yields ('325 g' -> '325 g'), whose number is a quantity,
+    not a serving count."""
+    if re.search(r"\b\d+\s*(?:g|kg|mg|ml|l|liter)\b", value or "", re.IGNORECASE):
+        return value.strip()
+    return digits_only(value)
 
 
 # --------------------------------------------------------------------------
@@ -268,6 +307,65 @@ def parse_ingredients_html(html_text: str) -> str:
     return "\n".join(out)
 
 
+def html_to_markdown(text: str) -> str:
+    """Inline HTML -> Paprika markdown: <strong>/<b> -> **bold**,
+    <em>/<i> -> *italic*; other tags removed, entities decoded."""
+    if not text:
+        return ""
+    text = re.sub(r"(?i)<br\s*/?>", "\n", text)
+    text = re.sub(r"(?i)</?(?:strong|b)\b[^>]*>", "**", text)
+    text = re.sub(r"(?i)</?(?:em|i)\b[^>]*>", "*", text)
+    text = re.sub(r"<[^>]+>", "", text)        # drop the rest (e.g. <nobr>)
+    text = html.unescape(text)
+    text = re.sub(r"[ \t]+", " ", text)
+    return text.strip()
+
+
+def _ld_recipe(html_text: str) -> dict:
+    """The ld+json Recipe object from the page, or None."""
+    for m in re.finditer(
+        r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',
+        html_text, re.DOTALL | re.IGNORECASE,
+    ):
+        try:
+            obj = json.loads(m.group(1).strip())
+        except json.JSONDecodeError:
+            continue
+        t = obj.get("@type") if isinstance(obj, dict) else None
+        if t == "Recipe" or (isinstance(t, list) and "Recipe" in t):
+            return obj
+    return None
+
+
+def extract_directions_ld(html_text: str) -> str:
+    """Directions from the page's ld+json, keeping <strong> as **bold** and
+    HowToSection names as bold sub-headings. '' if not found.  Plain text from
+    the copied page loses bold, so the HTML is the only source for it."""
+    recipe = _ld_recipe(html_text) if html_text else None
+    if not recipe:
+        return ""
+    out = []
+
+    def walk(items):
+        for step in items or []:
+            if not isinstance(step, dict):
+                t = html_to_markdown(str(step))
+                if t:
+                    out.append(t)
+            elif step.get("@type") == "HowToSection" or step.get("itemListElement"):
+                name = html_to_markdown(step.get("name", ""))
+                if name:
+                    out.append(f"**{name}**")
+                walk(step.get("itemListElement"))
+            else:
+                t = html_to_markdown(step.get("text", ""))
+                if t:
+                    out.append(t)
+
+    walk(recipe.get("recipeInstructions"))
+    return "\n\n".join(out)
+
+
 def extract_recipe_images_html(html_text: str) -> list:
     """Unique recipe gallery picture URLs (the <img class="recipe-card__image">
     elements), upgraded to the higher-resolution derivative. Related-recipe
@@ -282,6 +380,70 @@ def extract_recipe_images_html(html_text: str) -> list:
         if u not in urls:
             urls.append(u)
     return urls
+
+
+def extract_devices(html_text: str) -> tuple:
+    """Return ``(devices, accessories)`` from the 'Geräte und Zubehör' block.
+
+    Thermomix versions (TM5/TM6/TM7...) are devices; entries of any other type
+    are additional Zubehör (Varoma, Gareinsatz, ...).
+    """
+    devices, accessories = [], []
+    block = re.search(
+        r"<rdp-devices-and-accessories\b.*?</rdp-devices-and-accessories>",
+        html_text, re.DOTALL | re.IGNORECASE,
+    )
+    if block:
+        for dm in re.finditer(
+            r"<recipe-device\b([^>]*)>(.*?)</recipe-device>",
+            block.group(0), re.DOTALL | re.IGNORECASE,
+        ):
+            nm = re.search(r'class="recipe-device__name">(.*?)</span>', dm.group(2), re.DOTALL)
+            if not nm:
+                continue
+            name = re.sub(r"\s+", " ", html.unescape(nm.group(1))).strip()
+            if not name:
+                continue
+            t = re.search(r'type="([^"]*)"', dm.group(1))
+            if t and t.group(1).strip().lower() == "thermomixversion":
+                devices.append(name)
+            else:
+                accessories.append(name)
+    # Separate "Notwendiges Zubehör" list (Springform, Backpapier, ...).
+    useful = re.search(
+        r'class="[^"]*recipe-content__useful-items[^"]*".*?<ul[^>]*>(.*?)</ul>',
+        html_text, re.DOTALL | re.IGNORECASE,
+    )
+    if useful:
+        for li in re.findall(r"<li>(.*?)</li>", useful.group(1), re.DOTALL):
+            name = re.sub(r"\s+", " ", html.unescape(li)).strip()
+            if name:
+                accessories.append(name)
+    return devices, accessories
+
+
+def devices_from_text(lines: list) -> tuple:
+    """Classify a plain-text 'Geräte und Zubehör' block: ``TM<n>`` = device, rest Zubehör."""
+    devices, accessories = [], []
+    for ln in nonempty(lines):
+        ln = ln.strip()
+        if ln == "Notwendiges Zubehör":   # sub-header inside the section, not an item
+            continue
+        if re.fullmatch(r"TM\s*\d+", ln):
+            devices.append(ln)
+        else:
+            accessories.append(ln)
+    return devices, accessories
+
+
+def devices_note(devices: list, accessories: list) -> str:
+    """Format devices/accessories as note lines (empty string if none)."""
+    parts = []
+    if devices:
+        parts.append("Geräte: " + ", ".join(devices))
+    if accessories:
+        parts.append("Zubehör: " + ", ".join(accessories))
+    return "\n".join(parts)
 
 
 def build_recipe(url: str, text: str, html_text: str = None, fetch_image: bool = True) -> Recipe:
@@ -313,8 +475,10 @@ def build_recipe(url: str, text: str, html_text: str = None, fetch_image: bool =
         ingredients = parse_ingredients(lines[i_zutaten + 1 : i_geraete])
 
     # --- directions ---------------------------------------------------------
-    directions = ""
-    if i_zub != -1 and i_tipps > i_zub:
+    # The HTML keeps <strong> emphasis + section headings (-> markdown); the
+    # copied plain text has lost the bold, so fall back to it only without HTML.
+    directions = extract_directions_ld(html_text) if html_text else ""
+    if not directions and i_zub != -1 and i_tipps > i_zub:
         directions = "\n\n".join(nonempty(lines[i_zub + 1 : i_tipps]))
 
     # --- difficulty ---------------------------------------------------------
@@ -327,6 +491,16 @@ def build_recipe(url: str, text: str, html_text: str = None, fetch_image: bool =
     notes = ""
     if i_tipps != -1 and i_notizen > i_tipps:
         notes = "\n".join(nonempty(lines[i_tipps + 1 : i_notizen]))
+
+    # --- devices + accessories -> top of notes ------------------------------
+    devices, accessories = [], []
+    if html_text:
+        devices, accessories = extract_devices(html_text)
+    if not devices and not accessories and i_geraete != -1 and i_schwier > i_geraete:
+        devices, accessories = devices_from_text(lines[i_geraete + 1 : i_schwier])
+    dev_note = devices_note(devices, accessories)
+    if dev_note:
+        notes = (dev_note + "\n\n" + notes).strip() if notes else dev_note
 
     # --- custom notes: Nährwerte -> nutrition, Einfrieren -> description -----
     nutrition, freezer = "", ""
@@ -345,9 +519,13 @@ def build_recipe(url: str, text: str, html_text: str = None, fetch_image: bool =
         categories = nonempty(lines[i_tags + 1 : end])
 
     # --- scalar fields via regex over the whole text ------------------------
-    servings = first_match(full, r"(\d+\s+Portionen)")
-    prep_time = first_match(full, r"Zubereitung\s+(\d+\s*Min)")
-    total_time = first_match(full, r"Gesamt\s+(\d+\s*Min)")
+    # Prefer the explicit "Portionsgröße <yield>" line (covers Portionen, Stücke,
+    # weight yields like '325 g'); fall back to a bare "N Portionen".
+    servings = (first_match(full, r"Portionsgröße\s+(\d[^\n]*)")
+                or first_match(full, r"(\d+\s+Portionen)"))
+    # Capture the whole duration phrase (incl. 'Std.') starting at the first digit.
+    prep_time = first_match(full, r"Zubereitung\s+(\d[^\n]*)")
+    total_time = first_match(full, r"Gesamt\s+(\d[^\n]*)")
 
     rating = 0
     m = re.search(r"(\d[.,]?\d?)\s*\n\s*\d+\s+Bewertungen", full)
@@ -367,10 +545,10 @@ def build_recipe(url: str, text: str, html_text: str = None, fetch_image: bool =
         ingredients=sanitize(ingredients),
         directions=sanitize(directions),
         description=sanitize(description),
-        servings=sanitize(servings),
-        prep_time=sanitize(prep_time),
-        total_time=sanitize(total_time),
-        difficulty=sanitize(difficulty),
+        servings=servings_from_yield(sanitize(servings)),
+        prep_time=to_minutes(sanitize(prep_time)),
+        total_time=to_minutes(sanitize(total_time)),
+        difficulty=map_difficulty(sanitize(difficulty)),
         notes=sanitize(notes),
         categories=[c for c in (sanitize(c) for c in categories) if c],
         rating=rating,

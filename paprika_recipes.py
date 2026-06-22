@@ -27,6 +27,8 @@ import gzip
 import hashlib
 import io
 import json
+import os
+import re
 import uuid
 import zipfile
 from dataclasses import dataclass, field, fields
@@ -37,6 +39,30 @@ __all__ = ["Photo", "Recipe", "RecipeBook"]
 # File extensions used by Paprika.
 ARCHIVE_EXT = ".paprikarecipes"   # the zip container
 ENTRY_EXT = ".paprikarecipe"      # a single gzip-compressed-JSON member
+
+# Paprika derives a photo's *sync UID* from its filename stem, so the stem MUST
+# be a UUID.  If we hand it any other name (e.g. a source image's basename),
+# Paprika replaces it with a SHA-1 digest of the bytes, which its sync server
+# then rejects with "Invalid uid." and aborts syncing.  Real exports always use
+# ``<UPPERCASE-UUID>.jpg``.
+_UUID_RE = re.compile(
+    r"^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-"
+    r"[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+)
+
+
+def _photo_filename(name: Optional[str]) -> str:
+    """Return a Paprika-valid photo filename (``<UUID>.jpg``).
+
+    A caller-supplied name is kept only if its stem is already a UUID (so real
+    exports round-trip unchanged); anything else is replaced with a fresh UUID,
+    because Paprika requires a UUID stem and silently corrupts non-UUID names.
+    """
+    if name:
+        stem, _ext = os.path.splitext(name)
+        if _UUID_RE.match(stem):
+            return name
+    return f"{uuid.uuid4()}".upper() + ".jpg"
 
 
 def _sha256_upper(data: bytes) -> str:
@@ -65,8 +91,7 @@ class Photo:
         if isinstance(self.data, str):
             # Allow passing an already-base64 string.
             self.data = base64.b64decode(self.data)
-        if self.filename is None:
-            self.filename = f"{uuid.uuid4()}.jpg".upper()
+        self.filename = _photo_filename(self.filename)
         if self.hash is None:
             self.hash = _sha256_upper(self.data)
 
@@ -129,7 +154,7 @@ class Recipe:
     def set_photo(self, data: bytes, filename: Optional[str] = None) -> None:
         """Set the recipe's main photo from raw image bytes."""
         self.photo_bytes = data
-        self.photo = filename or f"{uuid.uuid4()}.jpg".upper()
+        self.photo = _photo_filename(filename)
 
     def add_photo(self, data: bytes, name: str = "", filename: Optional[str] = None) -> Photo:
         """Append an additional photo (to the ``photos`` array)."""
@@ -143,7 +168,7 @@ class Recipe:
         if self.photo_bytes is not None:
             photo_data = _b64(self.photo_bytes)
             photo_hash = _sha256_upper(self.photo_bytes)
-            photo_name = self.photo or f"{uuid.uuid4()}.jpg".upper()
+            photo_name = _photo_filename(self.photo)
         else:
             photo_data = None
             photo_hash = None

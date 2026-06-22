@@ -1,0 +1,330 @@
+{
+  "source_database": "data/products_harmonized.json",
+  "week": "KW 30, 2026-07-18 bis 2026-07-24",
+  "recipes": [
+    {
+      "id": "r304156",
+      "title": "Garnelen Curry",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r304156",
+      "week_label": "KW 30 (18.-24.07.)",
+      "category": "Samstag Fisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.7,
+      "rating_count": "465",
+      "difficulty": "einfach",
+      "work_time": "10 Min",
+      "total_time": "30 Min",
+      "estimate_context": "BLS/REWE, Kokosmilch vollfett, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 634,
+        "protein": 28,
+        "fat": 30,
+        "carbs": 63
+      },
+      "freezer_note": "möglich; Garnelen und Reis werden beim Aufwärmen etwas weicher, im Kühlschrank zuerst/zeitnah essen",
+      "note": "Sehr kurze aktive Zeit und starkes Rating; lokal knapp über Zielbereich durch Kokosmilch und 4->3-Portionierung, Proteinziel erreicht.",
+      "ingredients": [
+        {
+          "name": "Basmati-Reis",
+          "grams": 250,
+          "source": "rewe",
+          "id": "483958"
+        },
+        {
+          "name": "Wasser",
+          "grams": 0,
+          "note": "zum Kochen; ignoriert"
+        },
+        {
+          "name": "Salz",
+          "grams": 5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1 TL; Kochwasser/Abschmecken grob"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 40,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Zwiebeln",
+          "grams": 100,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Koriander, frisch",
+          "grams": 0,
+          "note": "10 g plus Garnitur; kleine Menge, für Einkaufsliste relevant"
+        },
+        {
+          "name": "Ingwer, frisch",
+          "grams": 20,
+          "source": "bls",
+          "id": "R211200"
+        },
+        {
+          "name": "grüne Chilischote",
+          "grams": 15,
+          "source": "bls",
+          "id": "G543100",
+          "note": "1 Schote grob als Paprika/Peperoncino modelliert"
+        },
+        {
+          "name": "Knoblauchzehen",
+          "grams": 15,
+          "source": "bls",
+          "id": "G490100"
+        },
+        {
+          "name": "Kreuzkümmel (Cumin), gemahlen",
+          "grams": 4,
+          "source": "rewe",
+          "id": "4246780",
+          "note": "2 TL grob als 4 g modelliert"
+        },
+        {
+          "name": "Koriander, gemahlen",
+          "grams": 4,
+          "source": "rewe",
+          "id": "8924884",
+          "note": "2 TL grob als 4 g modelliert"
+        },
+        {
+          "name": "Kurkuma, gemahlen",
+          "grams": 1,
+          "source": "rewe",
+          "id": "9052731",
+          "note": "1/2 TL grob als 1 g modelliert"
+        },
+        {
+          "name": "Tomatenmark",
+          "grams": 70,
+          "source": "rewe",
+          "id": "7129194"
+        },
+        {
+          "name": "Kokosmilch",
+          "grams": 400,
+          "source": "rewe",
+          "id": "792132",
+          "note": "volle Kokosmilch, 18 % Fett"
+        },
+        {
+          "name": "Garnelen, roh, geschält, TK",
+          "grams": 500,
+          "source": "bls",
+          "id": "T753100"
+        }
+      ]
+    },
+    {
+      "id": "r706693",
+      "title": "Hähnchen in cremiger Pesto-Sauce mit Erbsen-Reis",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r706693",
+      "week_label": "KW 30 (18.-24.07.)",
+      "category": "Sonntag Fleisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.4,
+      "rating_count": "2.5K",
+      "difficulty": "einfach",
+      "work_time": "15 Min",
+      "total_time": "35 Min",
+      "estimate_context": "BLS/REWE, Pesto und Gemüsebrühe produktabhängig, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 623,
+        "protein": 49,
+        "fat": 18,
+        "fiber": 4.1,
+        "carbs": 63
+      },
+      "freezer_note": "gut geeignet; Sauce und Reis portionsweise einfrierbar, Reis wird etwas weicher",
+      "note": "Hohe Proteinmenge bei niedrigem aktivem Aufwand; lokale Kalorien liegen unter Cookidoo durch konkrete Produktmatches.",
+      "ingredients": [
+        {
+          "name": "Wasser",
+          "grams": 1200,
+          "note": "ignoriert"
+        },
+        {
+          "name": "Gewürzpaste für Gemüsebrühe, selbst gemacht",
+          "grams": 20,
+          "source": "rewe",
+          "id": "2082415",
+          "note": "Cookidoo 2 geh. TL; Vegeta-Default, Salzaufnahme grob"
+        },
+        {
+          "name": "Reis, parboiled",
+          "grams": 250,
+          "source": "bls",
+          "id": "C359000"
+        },
+        {
+          "name": "Hähnchenbrustfilet",
+          "grams": 600,
+          "source": "rewe",
+          "id": "8342820"
+        },
+        {
+          "name": "Öl",
+          "grams": 15,
+          "source": "bls",
+          "id": "Q180000",
+          "note": "Cookidoo generisch 'Öl', als Rapsöl modelliert"
+        },
+        {
+          "name": "Salz",
+          "grams": 7.5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1 1/2 TL plus Würzen; Salzaufnahme grob"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1/2 TL, Menge klein/ignoriert"
+        },
+        {
+          "name": "Knoblauch, granuliert",
+          "grams": 1.5,
+          "source": "rewe",
+          "id": "4248180",
+          "pantry_names": [
+            "Knoblauchpulver"
+          ],
+          "note": "1/2 TL grob als 1,5 g modelliert"
+        },
+        {
+          "name": "Erbsen, TK",
+          "grams": 200,
+          "source": "bls",
+          "id": "G760200"
+        },
+        {
+          "name": "Mehl",
+          "grams": 30,
+          "source": "bls",
+          "id": "C214100"
+        },
+        {
+          "name": "Pesto rosso",
+          "grams": 45,
+          "source": "rewe",
+          "id": "7801949",
+          "note": "REWE Beste Wahl Pesto Rosso"
+        },
+        {
+          "name": "Frischkäse",
+          "grams": 100,
+          "source": "bls",
+          "id": "M820600",
+          "note": "Natur, ca. 45 % Fett i. Tr."
+        }
+      ]
+    },
+    {
+      "id": "r107828",
+      "title": "Vegetarische Linguine Carbonara",
+      "url": "https://cookidoo.de/recipes/recipe/de-DE/r107828",
+      "week_label": "KW 30 (18.-24.07.)",
+      "category": "Montag Vegetarisch",
+      "cookidoo_portions": 4,
+      "real_portions": 3,
+      "rating": 4.5,
+      "rating_count": "1.8K",
+      "difficulty": "einfach",
+      "work_time": "15 Min",
+      "total_time": "30 Min",
+      "estimate_context": "BLS/REWE, Joghurt 10 %, Salz grob",
+      "cookidoo_nutrition_per_portion": {
+        "kcal": 637,
+        "protein": 24,
+        "fat": 25,
+        "fiber": 6.9,
+        "carbs": 75
+      },
+      "freezer_note": "eher nicht ideal; Pasta und Joghurt-Eigelb-Sauce im Kühlschrank zeitnah essen, vorsichtig aufwärmen",
+      "note": "Niedrigster aktiver Aufwand der Woche, daher Montag; lokal knapp über Zielbereich, vegetarisches Protein im akzeptablen 30-39-g-Bereich.",
+      "ingredients": [
+        {
+          "name": "Parmesan",
+          "grams": 100,
+          "source": "bls",
+          "id": "M306400"
+        },
+        {
+          "name": "Zwiebeln",
+          "grams": 100,
+          "source": "bls",
+          "id": "G480100"
+        },
+        {
+          "name": "Möhren",
+          "grams": 100,
+          "source": "bls",
+          "id": "G620100"
+        },
+        {
+          "name": "Olivenöl",
+          "grams": 30,
+          "source": "bls",
+          "id": "Q120000"
+        },
+        {
+          "name": "Wasser",
+          "grams": 0,
+          "note": "zum Kochen; ignoriert"
+        },
+        {
+          "name": "Salz",
+          "grams": 5,
+          "source": "bls",
+          "id": "R111000",
+          "note": "1 TL plus Nudelwasser; Salzaufnahme grob"
+        },
+        {
+          "name": "Linguine",
+          "grams": 400,
+          "source": "rewe",
+          "id": "2631993"
+        },
+        {
+          "name": "Zucchini",
+          "grams": 200,
+          "source": "bls",
+          "id": "G582100"
+        },
+        {
+          "name": "Pfeffer",
+          "grams": 0,
+          "note": "1 Prise, Menge klein/ignoriert"
+        },
+        {
+          "name": "Sahne",
+          "grams": 50,
+          "source": "bls",
+          "id": "M173800",
+          "note": "Schlagsahne 30 % Fett"
+        },
+        {
+          "name": "Eigelb",
+          "grams": 36,
+          "source": "bls",
+          "id": "E112100",
+          "note": "2 Eigelb zu ca. 18 g"
+        },
+        {
+          "name": "Griechischer Joghurt",
+          "grams": 50,
+          "source": "rewe",
+          "id": "1366649",
+          "note": "10 % Fett"
+        }
+      ]
+    }
+  ]
+}
